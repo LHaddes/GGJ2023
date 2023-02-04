@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class Encyclopedia : MonoBehaviour
 {
     public GameObject uiPanel;
-    
-    [Header("Apple List")]
-    public GameObject appleListPanel;
+    private bool _panelIsActive;
+
+    [Header("Apple List")] public GameObject appleListPanel;
     public GameObject appleSlotPrefab;
     public Sprite unknownSprite;
     public List<GameObject> allFruitSlots = new List<GameObject>();
@@ -20,10 +21,11 @@ public class Encyclopedia : MonoBehaviour
     public TMP_Text appleInfoRarity;
     public TMP_Text appleInfoDescription;
     public Image appleRecipeSlot1;
+    public Image appleToolSlot1;
     public Image appleRecipeSlot2;
-    public Image appleRecipeSlot3;
-    public Image appleRecipeSlot4;
-    
+    public Image appleToolSlot2;
+    public GameObject secondRecipePanel;
+
     public static Encyclopedia Instance;
     private GameplayManager _gameplayManager;
 
@@ -32,16 +34,30 @@ public class Encyclopedia : MonoBehaviour
     {
         Instance = this;
     }
-    
+
     // Start is called before the first frame update
     void Start()
     {
         _gameplayManager = GameplayManager.Instance;
-       
+        _gameplayManager.inventory.unlockAppleInEncyclopedia.AddListener(UpdateEncyclopedia);
         InitEncyclopedia();
     }
-    
-        
+
+    public void ToggleEncyclopediaPanel()
+    {
+        if (_panelIsActive)
+        {
+            uiPanel.SetActive(false);
+            _panelIsActive = false;
+        }
+        else
+        {
+            uiPanel.SetActive(true);
+            _panelIsActive = true;
+        }
+    }
+
+
     public void InitEncyclopedia()
     {
         for (int i = 0; i < _gameplayManager.inventory.allFruits.Count; i++)
@@ -60,8 +76,12 @@ public class Encyclopedia : MonoBehaviour
                 slot.appleName = "?????";
                 slot.appleSprite = unknownSprite;
             }
+
+            slot.GetComponent<Button>().onClick
+                .AddListener(() => DisplayAppleInfo(EventSystem.current.currentSelectedGameObject));
             
-            slot.GetComponent<Button>().onClick.AddListener(() => DisplayAppleInfo(EventSystem.current.currentSelectedGameObject));
+            if(i == 0)
+                DisplayAppleInfo(slot.gameObject);
         }
     }
 
@@ -82,10 +102,9 @@ public class Encyclopedia : MonoBehaviour
             }
         }
     }
-        
+
     public void DisplayAppleInfo(GameObject slot)
     {
-        Debug.Log("Display");
         AppleSlot info = slot.GetComponent<AppleSlot>();
         Fruit apple = null;
         for (int i = 0; i < _gameplayManager.inventory.allFruits.Count; i++)
@@ -99,23 +118,28 @@ public class Encyclopedia : MonoBehaviour
 
         if (apple != null)
         {
-            Debug.Log("apple found");
             appleInfoName.text = apple.name;
             appleInfoImage.sprite = apple.sprite;
             appleInfoDescription.text = apple.description;
             appleInfoRarity.text = apple.rarity.ToString();
-        
-            foreach (Recipe r in apple.recipeList)
-            {
-                appleRecipeSlot1.sprite = r.fruit.sprite;
-                //TODO Ajouter le sprite de l'outil
-        
-            }
 
-            for (int i = 0; i < apple.recipeList.Count; i++)
+            if (apple.recipeList.Count > 1)
             {
-                
+                appleRecipeSlot1.sprite = apple.recipeList[0].fruit.sprite;
+                appleRecipeSlot2.sprite = apple.recipeList[1].fruit.sprite;
+                //TODO Ajouter le sprite de l'outil
             }
+            else
+            {
+                foreach (Recipe r in apple.recipeList)
+                {
+                    appleRecipeSlot1.sprite = r.fruit.sprite;
+                    //TODO Ajouter le sprite de l'outil
+                }
+                
+                secondRecipePanel.SetActive(false);
+            }
+            
         }
     }
 }

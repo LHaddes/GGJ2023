@@ -12,6 +12,8 @@ public class GameInventory : ScriptableObject
   public UnityAction<List<Fruit>> onFruitsAvailableUpdated;
   public UnityAction onAllFruitsFound;
 
+  [HideInInspector] public UnityEvent unlockAppleInEncyclopedia = new UnityEvent();
+
 
   public void StartGame()
   {
@@ -26,12 +28,13 @@ public class GameInventory : ScriptableObject
   public void ObtainFruit(Fruit fruit)
   {
 
-    onFruitObtained.Invoke(fruit);
+    //onFruitObtained.Invoke(fruit);
     if (!fruit.isUnlocked)
     {
       fruit.isUnlocked = true;
       var availableFruits = ListAvailableFruits();
-      onFruitsAvailableUpdated.Invoke(availableFruits);
+      unlockAppleInEncyclopedia.Invoke();
+     // onFruitsAvailableUpdated.Invoke(availableFruits);
 
       if (availableFruits.Count == allFruits.Count)
       {

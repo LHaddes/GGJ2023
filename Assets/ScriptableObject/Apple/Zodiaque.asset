@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: Zodiaque
   m_EditorClassIdentifier: 
   name: Pomme Chevalier du Zodiaque
-  description: 
+  description: "La Pomme Chevalier du Zodiaque est \xE9quip\xE9e d\u2019une des l\xE9gendaires
+    12/13 armures d\u2019or. Seulement quelques chanceux ont pu savourer la vraie
+    essence de ce fruit, car il faut malheureusement \xEAtre du signe du zodiaque
+    appropri\xE9 pour une d\xE9gustation optimale. Dans le cas contraire, elle aura
+    juste un go\xFBt de pomme. Pour bien la laisser m\xFBrir, il est conseill\xE9
+    de la poser tout en haut des escaliers de votre foyer."
   rarity: 3
   sprite: {fileID: 0}
   mesh: {fileID: 0}

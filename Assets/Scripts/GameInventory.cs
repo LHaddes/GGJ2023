@@ -44,4 +44,19 @@ public class GameInventory : ScriptableObject
   {
     return allFruits.FindAll(fruit => fruit.isUnlocked);
   }
+
+  public Fruit GetFusion(Tool.ToolType tool, Fruit fruit)
+  {
+    foreach (Fruit resultFruit in allFruits)
+    {
+      foreach (Recipe recipe in resultFruit.recipeList)
+      {
+        if (recipe.fruit == fruit && recipe.tool == tool)
+        {
+          return resultFruit;
+        }
+      }
+    }
+    return null;
+  }
 }

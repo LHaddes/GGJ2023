@@ -12,10 +12,14 @@ public class UIManager : MonoBehaviour
   public UnityEvent<Tool.ToolType> onSelectTool = new UnityEvent<Tool.ToolType>();
   public UnityEvent<Fruit> onSelectFruit = new UnityEvent<Fruit>();
   public UnityEvent onClearSelection = new UnityEvent();
+  public UnityEvent<Tool.ToolType, Fruit> onClickFuse = new UnityEvent<Tool.ToolType, Fruit>();
 
   public GameInventory inventory;
   public Button fuseButton;
   public List<ToolButton> toolButtons;
+
+  public Text notifications;
+  public GameObject victoryScreen;
 
   public GameObject fruitButtonPrefab;
   public RectTransform fruitsPanel;
@@ -30,6 +34,14 @@ public class UIManager : MonoBehaviour
     }
 
     inventory.onFruitsAvailableUpdated += FillFruitsPanel;
+    inventory.onFruitObtained += DisplayFruitObtained;
+    inventory.onAllFruitsFound += DisplayVictory;
+
+    fuseButton.interactable = false;
+    fuseButton.onClick.AddListener(FuseSelected);
+
+    victoryScreen.SetActive(false);
+    notifications.text = "";
   }
 
   void SelectTool(Tool.ToolType tool)
@@ -53,12 +65,20 @@ public class UIManager : MonoBehaviour
     }
   }
 
+  void FuseSelected()
+  {
+    if (selectedTool != null && selectedFruit != null)
+    {
+      onClickFuse.Invoke(selectedTool.GetValueOrDefault(), selectedFruit);
+    }
+  }
+
   void FillFruitsPanel(List<Fruit> fruits)
   {
     // Clear existing buttons
-    foreach (GameObject btn in fruitsPanel)
+    foreach (Transform btn in fruitsPanel)
     {
-      Destroy(btn);
+      Destroy(btn.gameObject);
     }
 
     // Add new buttons
@@ -69,5 +89,30 @@ public class UIManager : MonoBehaviour
       fruitBtn.fruit = fruit;
       fruitBtn.onSelect += SelectFruit;
     }
+  }
+
+  public void DisplayFruitObtained(Fruit fruit)
+  {
+    notifications.text = "You obtained a " + fruit.name + "!";
+    ResetSelection();
+  }
+
+  public void DisplayFail()
+  {
+    notifications.text = "Nothing happens…";
+    ResetSelection();
+  }
+
+  public void DisplayVictory()
+  {
+    victoryScreen.SetActive(true);
+  }
+
+  void ResetSelection()
+  {
+    selectedTool = null;
+    selectedFruit = null;
+    fuseButton.interactable = false;
+    onClearSelection.Invoke();
   }
 }

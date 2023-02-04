@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
+  m_Name: Pomme
+  m_EditorClassIdentifier: 
+  name: Pomme
+  description: "La Pomme a une structure g\xE9n\xE9tique instable qui se transforme
+    au contact de certains outils. Son ADN poss\xE8de de nombreuses possibilit\xE9s
+    d\u2019evolutions"
+  img: {fileID: 0}
+  isUnlocked: 1
+  isUnlockedOnStart: 1
+  recipeList: []

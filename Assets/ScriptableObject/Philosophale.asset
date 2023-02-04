@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
+  m_Name: Philosophale
+  m_EditorClassIdentifier: 
+  name: Pomme Philosophale
+  description: "La Pomme Philosophale est d\u2019apparence min\xE9rale rouge\xE2tre.
+    La plupart des gourmets ont peur de la go\xFBter, mais son apparence brute d\xE9guise
+    en fait une d\xE9licieuse gel\xE9e de framboise. Sa teneur riche en fer rappelle
+    \xE9trangement la composition du sang humain. L\u2019\xE9laboration de ce fruit
+    constitue le but de l\u2019alchimie, et permettrait d\u2019acqu\xE9rir la conscience
+    absolue. Cuisiner la Pomme Philosophale en tarte et la partager en famille donne
+    acc\xE8s \xE0 la lumi\xE8re inextinguible, de donner la vie \xE9ternelle, et
+    de transmuter des\_m\xE9taux."
+  img: {fileID: 0}
+  isUnlocked: 0
+  isUnlockedOnStart: 0
+  recipeList: []

@@ -1,16 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameplayManager : MonoBehaviour
 {
     public static GameplayManager Instance;
-    public Fruit fruitToUse;
-    public Tool.ToolType toolToUse;
-
-    public List<Fruit> allFruits = new List<Fruit>();
-    
   public GameInventory inventory;
+
+  public UnityEvent onFail = new UnityEvent();
 
     void Awake()
     {
@@ -29,25 +27,16 @@ public class GameplayManager : MonoBehaviour
         
     }
 
-    public void Fuse()
+    public void Fuse(Tool.ToolType tool, Fruit fruit)
     {
-        //On vérifie tous les fruits du jeu
-        foreach (Fruit f in allFruits)
+        Fruit newFruit = inventory.GetFusion(tool, fruit);
+        if (newFruit != null)
         {
-            //Pour chaque fruit, on vérifie les différentes recettes possibles
-            foreach (Recipe r in f.recipeList)
-            {
-                if (r.fruit == fruitToUse && r.tool == toolToUse)
-                {
-                    Fruit resultFruit = f;  //Si la recette réalisée correspond à une recette exitante, on donne le résultat de la recette au joueur
-                    Debug.Log($"You just crafted {resultFruit.name}");
-                    
-                    return;
-                }
-            }
+            inventory.ObtainFruit(newFruit);
         }
-        
-        //Sinon, la recette ne donne rien et on perd le fruit utilisé
-        Debug.Log("Combinaison does not work");
+        else
+        {
+            onFail.Invoke();
+        }
     }
 }

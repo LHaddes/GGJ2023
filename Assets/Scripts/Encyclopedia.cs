@@ -26,7 +26,7 @@ public class Encyclopedia : MonoBehaviour
     
     public static Encyclopedia Instance;
     private GameplayManager _gameplayManager;
-    
+
 
     void Awake()
     {
@@ -37,15 +37,16 @@ public class Encyclopedia : MonoBehaviour
     void Start()
     {
         _gameplayManager = GameplayManager.Instance;
+       
         InitEncyclopedia();
     }
 
     // Update is called once per frame
     void Update()
-    {
+        {
         
-    }
-
+        }
+        
     public void InitEncyclopedia()
     {
         for (int i = 0; i < _gameplayManager.allFruits.Count; i++)
@@ -86,7 +87,7 @@ public class Encyclopedia : MonoBehaviour
             }
         }
     }
-
+        
     public void DisplayAppleInfo(GameObject slot)
     {
         Debug.Log("Display");
@@ -98,27 +99,27 @@ public class Encyclopedia : MonoBehaviour
             {
                 apple = _gameplayManager.allFruits[i];
                 break;
-            }
+    }
         }
 
         if (apple != null)
-        {
+    {
             Debug.Log("apple found");
             appleInfoName.text = apple.name;
             appleInfoImage.sprite = apple.img;
             appleInfoDescription.text = apple.description;
-
+        
             foreach (Recipe r in apple.recipeList)
             {
                 appleRecipeSlot1.sprite = r.fruit.img;
                 //TODO Ajouter le sprite de l'outil
-                
-            }
+        
+    }
 
             for (int i = 0; i < apple.recipeList.Count; i++)
             {
                 
-            }
+}
         }
     }
 }

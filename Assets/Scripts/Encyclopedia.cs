@@ -4,40 +4,40 @@ using UnityEngine;
 
 public class Encyclopedia : MonoBehaviour
 {
-    public GameObject uiPanel;
-    public static Encyclopedia Instance;
-    private GameplayManager _gameplayManager;
+  public GameObject uiPanel;
+  public static Encyclopedia Instance;
+  private GameplayManager _gameplayManager;
 
-    public Dictionary<Fruit, bool> discoveredFruits;
+  public Dictionary<Fruit, bool> discoveredFruits;
 
-    void Awake()
+  void Awake()
+  {
+    Instance = this;
+  }
+
+  // Start is called before the first frame update
+  void Start()
+  {
+    _gameplayManager = GameplayManager.Instance;
+    discoveredFruits = new Dictionary<Fruit, bool>();
+    foreach (Fruit f in _gameplayManager.inventory.allFruits)
     {
-        Instance = this;
-    }
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        _gameplayManager = GameplayManager.Instance;
-        discoveredFruits = new Dictionary<Fruit, bool>();
-        foreach (Fruit f in _gameplayManager.allFruits)
-        {
-            discoveredFruits.Add(f, f.isUnlocked);
-        }
-        
-        Debug.Log(discoveredFruits);
-        UpdateEncyclopedia();
+      discoveredFruits.Add(f, f.isUnlocked);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    Debug.Log(discoveredFruits);
+    UpdateEncyclopedia();
+  }
 
-    public void UpdateEncyclopedia()
-    {
-        
-        
-    }
+  // Update is called once per frame
+  void Update()
+  {
+
+  }
+
+  public void UpdateEncyclopedia()
+  {
+
+
+  }
 }

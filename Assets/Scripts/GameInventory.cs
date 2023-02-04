@@ -28,13 +28,13 @@ public class GameInventory : ScriptableObject
   public void ObtainFruit(Fruit fruit)
   {
 
-    //onFruitObtained.Invoke(fruit);
+    onFruitObtained.Invoke(fruit);
     if (!fruit.isUnlocked)
     {
       fruit.isUnlocked = true;
       var availableFruits = ListAvailableFruits();
       unlockAppleInEncyclopedia.Invoke();
-     // onFruitsAvailableUpdated.Invoke(availableFruits);
+      onFruitsAvailableUpdated.Invoke(availableFruits);
 
       if (availableFruits.Count == allFruits.Count)
       {

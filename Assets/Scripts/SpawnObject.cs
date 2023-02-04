@@ -6,6 +6,7 @@ public class SpawnObject : MonoBehaviour
 {   
     public Transform FruitPosition;
     public Transform ToolPosition;
+    public ToolPropertiesDefinition toolProperties;
     
     public void ShowSelectedFruit(Fruit fruit)
     {
@@ -14,12 +15,13 @@ public class SpawnObject : MonoBehaviour
         Instantiate(fruit.mesh, FruitPosition);
     }
 
-    // public void ShowSelectedTool(Tool tool)
-    // {
-    //     foreach(Transform child in ToolPosition)
-    //         Destroy(child.gameObject);
-    //     Instantiate(tool.mesh, ToolPosition);
-    // }
+    public void ShowSelectedTool(Tool.ToolType tool)
+    {
+        foreach(Transform child in ToolPosition)
+            Destroy(child.gameObject);
+        ToolProperties toolProperty = toolProperties.tools.Find(property => property.tool == tool);
+        Instantiate(toolProperty.mesh, ToolPosition);
+    }
     
     public void Clear(){
         foreach(Transform child in FruitPosition)

@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class GameplayManager : MonoBehaviour
 {
+    public static GameplayManager Instance;
     public Fruit fruitToUse;
     public Tool.ToolType toolToUse;
 
     public List<Fruit> allFruits = new List<Fruit>();
+
+    void Awake()
+    {
+        Instance = this;
+    }
     
     // Start is called before the first frame update
     void Start()
@@ -22,14 +28,16 @@ public class GameplayManager : MonoBehaviour
     }
 
     public void Fuse()
-    {
+    {   
+        //On vérifie tous les fruits du jeu
         foreach (Fruit f in allFruits)
-        {
+        {  
+            //Pour chaque fruit, on vérifie les différentes recettes possibles
             foreach (Recipe r in f.recipeList)
             {
                 if (r.fruit == fruitToUse && r.tool == toolToUse)
                 {
-                    Fruit resultFruit = f;
+                    Fruit resultFruit = f;  //Si la recette réalisée correspond à une recette exitante, on donne le résultat de la recette au joueur
                     Debug.Log($"You just crafted {resultFruit.name}");
                     
                     return;
@@ -37,6 +45,7 @@ public class GameplayManager : MonoBehaviour
             }
         }
         
+        //Sinon, la recette ne donne rien et on perd le fruit utilisé
         Debug.Log("Combinaison does not work");
     }
 }

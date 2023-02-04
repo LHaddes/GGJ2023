@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Phoenix
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Pomme Phoenix
+  description: "La Pomme Phoenix ressemble \xE0 s\u2019y m\xE9prendre au l\xE9gendaire
+    oiseau de feu. Certains gourmets t\xE9m\xE9raires racontent que prendre une bouch\xE9e
+    de ce fruit est proche de la sensation d\u2019avaler un cendrier de lendemain
+    de soir\xE9e, avec un l\xE9ger arri\xE8re-go\xFBt de poulet brais\xE9. En agitant
+    ce fruit, de chaleureuses braises incandescentes stagneront en l\xE9vitation
+    dans la pi\xE8ce, pour une agr\xE9able soir\xE9e romantique aux lumi\xE8res tamis\xE9es.
+    La Pomme Phoenix apporterait potentiellement la solution a la faim dans le monde,
+    puisque m\xEAme en la mangeant, elle rena\xEEtra miraculeusement le lendemain. "
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

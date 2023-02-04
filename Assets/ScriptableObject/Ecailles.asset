@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Ecailles
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Pomme Ecailles
+  description: "La Pomme Ecailles d\xE9gage une puissante aura magique, on devine
+    que ses \xE9cailles renferment un potentiel gustatif unique. Il arrive de l\u2019entendre
+    faiblement rugir de l\u2019int\xE9rieur, comme un oeuf pr\xEAt a \xE9clore."
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

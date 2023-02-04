@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Robot
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Pomme Robot
+  description: "La Pomme Robot est enti\xE8rement faite de metal et d\u2019outils
+    informatiques en tout genre. Elle n\u2019est pas comestible mais r\xE9alisera
+    sans probl\xE8me votre comptabilit\xE9 du budget familial. Rendu en .csv garanti
+    ! La nuit, on l\u2019entend r\xE9p\xE9ter d\u2019une voix robotique : \xAB\_MIAOU-MIAOU-MIAOU\_\xBB."
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

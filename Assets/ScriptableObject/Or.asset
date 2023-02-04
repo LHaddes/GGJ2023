@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Or
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Pomme d'Or
+  description: "La Pomme d\u2019Or est, en bref, en or. Elle est majoritairement
+    utilis\xE9e comme \xE9l\xE9ment de d\xE9coration chez les plus bourgeois. Fun
+    Fact: Il est av\xE9r\xE9 qu\u2019elle contient assez d\u2019or pour constituer
+    32 dentiers de 32 dents en or. En concentrant son attention dessus, il est possible
+    d\u2019y ressentir une profonde puissance, complexe m\xE9lange d\u2019\xE9nergie
+    draconienne et divine."
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

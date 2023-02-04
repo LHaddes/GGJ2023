@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: IA
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Pomme IA
+  description: "La Pomme IA renferme un gigantesque r\xE9seau de neurones informatiques.
+    Elle n\u2019est malheureusement pas comestible, mais r\xE9pondra volontiers \xE0
+    vos questions en tous genres si celles-ci sont pr\xE9c\xE9d\xE9es de la formulation
+    : \xAB\_Ok Pomme\_\xBB. Sa surface tactile sera d\u2019une aide pr\xE9cieuse
+    pour utiliser de la domotique dans votre foyer. Google et Microsoft r\xE9fl\xE9chissent
+    m\xEAme a l\u2019int\xE9grer dans leur moteur de recherche."
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

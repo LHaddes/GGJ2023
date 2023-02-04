@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Chat
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Pomme Chat
+  description: "La Pomme Chat arbore une \xE9tonnante fourrure soyeuse. Les gourmets
+    du monde entier s\u2019accordent \xE0 dire que son go\xFBt est un complexe m\xE9lange
+    de poulet, de brocoli et de riz cantonais. Ne lui donnez pas de lait apr\xE8s
+    minuit !"
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

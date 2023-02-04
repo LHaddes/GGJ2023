@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Graal
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Pomme Graal
+  description: "La Pomme Graal a la forme du calice divin de la l\xE9gende arthurienne.
+    Elle n\u2019est pas comestible, mais sublimera n\u2019importe quel ap\xE9ritif
+    lors de vos diners mondains. Faire s\u2019entrechoquer deux Pomme Graal \xE9tait
+    symbole de confiance au Moyen-Age. Certains la surnomme m\xEAme \xAB\_La Pomme
+    Tchin-Tchin\_\xBB."
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

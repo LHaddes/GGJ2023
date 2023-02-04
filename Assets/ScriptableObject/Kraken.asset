@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Kraken
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Pomme Kraken
+  description: "La Pomme Kraken dispose de multiples excroissances tentaculaires
+    \xE9quip\xE9es de ventouses. Sa texture caoutchouteuse et sa saveur oc\xE9anique
+    accompagneront parfaitement votre pizza Norv\xE9gienne ou vos soirees tapas entre
+    amis. Cependant attention \xE0 ne pas l\u2019emporter avec vous lors de vos sorties
+    en mer, ou votre bateau finira probablement au fond de l\u2019ocean."
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

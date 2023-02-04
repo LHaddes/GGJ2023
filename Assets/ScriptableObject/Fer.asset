@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Fer
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Pomme de Fer
+  description: "La Pomme de Fer est ferme et robuste. Les seules personnes ayant
+    voulu la go\xFBter tel quel en ont perdu leurs dents, et leurs repas ne se r\xE9sument
+    d\xE9sormais qu\u2019\xE0 de la nourriture liquide. Les manifestants s\u2019en
+    servent pour briser des fen\xEAtres."
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

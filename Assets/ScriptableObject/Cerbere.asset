@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Cerbere
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: "Pomme Cerb\xE8re"
+  description: "La Pomme Cerb\xE8re est extr\xEAmement dangereuse pour quiconque
+    s\u2019approche de l\u2019une de ses 3 t\xEAtes. Chacune d\u2019entre elle a
+    d\u2019ailleurs un go\xFBt different : saumon, ananas et 4 fromages pour ravir
+    grands et petits. La l\xE9gende raconte que c\u2019est le fruit pr\xE9f\xE9r\xE9
+    d\u2019Hades, ou encore qu\u2019il est possible de l\u2019apprivoiser en lui
+    offrant des os d'impis."
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

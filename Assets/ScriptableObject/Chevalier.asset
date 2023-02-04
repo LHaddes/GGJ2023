@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Chevalier
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Pomme Chevalier
+  description: "La Pomme Chevalier est enrob\xE9e d\u2019une solide armure qui la
+    prot\xE8ge des pr\xE9dateurs. Une fois \xE9pluch\xE9e, elle offre une texture
+    savoureuse, mais un go\xFBt proche de celui de la chaire humaine. Elle sera n\xE9anmoins
+    un moyen de d\xE9fense redoutable lorsque vous vous ferez racketter votre t\xE9l\xE9phone
+    dans la rue."
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

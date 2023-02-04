@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Planete
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: "Pomme Plan\xE8te"
+  description: "La Pomme Plan\xE8te est un \xE9cosyst\xE8me \xE0 part enti\xE8re.
+    Il est pr\xE9f\xE9rable de la consommer lorsque les bact\xE9ries et insectes
+    alentours se r\xE9unissent \xE0 sa surface, pour apporter une saveur plus complexe
+    et intense. La garder trop longtemps a l\u2019air libre peut attirer des Pommes
+    Com\xE8te dans votre cuisine."
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

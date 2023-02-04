@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Fusee
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: "Pomme Fus\xE9e"
+  description: "La Pomme Fus\xE9e est constitu\xE9e avant tout de metal, d\u2019\xE9nergie
+    cosmique et de carburant. Philippe Etchebest et Thierry Marx th\xE9orisent qu\u2019il
+    faut la faire fondre dans un four en pyrolyse (500\xB0C) ou la faire mijoter
+    avec une Pomme Ardente pour la d\xE9guster. Elon Musk s\u2019inspire de celle-ci
+    pour developper sa fusee Starship."
   img: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0

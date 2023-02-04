@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Zodiaque
   m_EditorClassIdentifier: 
-  name: 
+  name: Pomme Chevalier du Zodiaque
   description: 
   img: {fileID: 0}
   isUnlocked: 0

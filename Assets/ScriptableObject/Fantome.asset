@@ -19,7 +19,9 @@ MonoBehaviour:
     ont enchain\xE9s sur Terre. Son go\xFBt est proche de la Sativa Amnesia Haze
     et les plus grands experts en botanique l\u2019\xE9tudient pour cr\xE9er de nouvelles
     vari\xE9t\xE9s surprenantes."
-  img: {fileID: 0}
+  rarity: 4
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

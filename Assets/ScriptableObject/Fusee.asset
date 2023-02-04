@@ -18,7 +18,9 @@ MonoBehaviour:
     faut la faire fondre dans un four en pyrolyse (500\xB0C) ou la faire mijoter
     avec une Pomme Ardente pour la d\xE9guster. Elon Musk s\u2019inspire de celle-ci
     pour developper sa fusee Starship."
-  img: {fileID: 0}
+  rarity: 3
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

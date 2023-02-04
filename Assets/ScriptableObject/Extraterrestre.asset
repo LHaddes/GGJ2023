@@ -19,7 +19,9 @@ MonoBehaviour:
     d\u2019un fruit, mais sa saveur et sa texture sont extr\xEAmement proches de
     la morve humaine. Il parait qu\u2019elle provient d\u2019une lointaine plan\xE8te
     de puissants guerriers."
-  img: {fileID: 0}
+  rarity: 3
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

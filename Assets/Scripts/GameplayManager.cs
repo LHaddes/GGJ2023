@@ -20,13 +20,13 @@ public class GameplayManager : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    // TODO: Start menu
-    if (!started)
-  {
-      started = true;
-    inventory.StartGame();
+      // TODO: Start menu
+      if (!started)
+      {
+        started = true;
+        inventory.StartGame();
     
-  }
+      }
   }
 
 

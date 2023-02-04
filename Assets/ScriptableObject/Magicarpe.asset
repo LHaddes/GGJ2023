@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Pomme Magicarpe
   description: La Pomme Magicarpe utilise Trempette. Mais il ne se passe rien.
-  img: {fileID: 0}
+  rarity: 2
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

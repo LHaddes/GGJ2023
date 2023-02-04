@@ -17,7 +17,9 @@ MonoBehaviour:
     d\u2019\xE9nergie spectrale. Elle n\u2019a globalement pas de go\xFBt, ni de
     texture. Capturez la dans un aspirateur S.O.S puis rel\xE2chez la chez votre
     pire ennemi pour h\xE2nter ses nuits."
-  img: {fileID: 0}
+  rarity: 3
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

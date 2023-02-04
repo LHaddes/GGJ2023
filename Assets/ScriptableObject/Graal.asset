@@ -18,7 +18,9 @@ MonoBehaviour:
     lors de vos diners mondains. Faire s\u2019entrechoquer deux Pomme Graal \xE9tait
     symbole de confiance au Moyen-Age. Certains la surnomme m\xEAme \xAB\_La Pomme
     Tchin-Tchin\_\xBB."
-  img: {fileID: 0}
+  rarity: 3
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

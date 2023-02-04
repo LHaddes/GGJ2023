@@ -18,7 +18,9 @@ MonoBehaviour:
     beaucoup plus fish-enthusiast. Le tr\xE8s renomm\xE9 Sacha Du-Bourg-Palais la
     d\xE9cris comme \xAB\_Un go\xFBt de merlu avec une texture d\u2019anguille\_\xBB.
     La Pomme Dragon murira plus vite si elle est entour\xE9e de Pomme d\u2019Or."
-  img: {fileID: 0}
+  rarity: 3
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

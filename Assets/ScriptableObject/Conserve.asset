@@ -16,7 +16,9 @@ MonoBehaviour:
   description: "La Pomme Conserve est majoritairement constitu\xE9e d\u2019aluminium.
     Elle n\u2019a absolument aucune saveur mais sera tr\xE8s utile pour conserver
     vos plats. "
-  img: {fileID: 0}
+  rarity: 3
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

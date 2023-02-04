@@ -40,25 +40,20 @@ public class Encyclopedia : MonoBehaviour
        
         InitEncyclopedia();
     }
-
-    // Update is called once per frame
-    void Update()
-        {
-        
-        }
+    
         
     public void InitEncyclopedia()
     {
-        for (int i = 0; i < _gameplayManager.allFruits.Count; i++)
+        for (int i = 0; i < _gameplayManager.inventory.allFruits.Count; i++)
         {
             GameObject slotObj = Instantiate(appleSlotPrefab, appleListPanel.transform);
             AppleSlot slot = slotObj.GetComponent<AppleSlot>();
             allFruitSlots.Add(slotObj);
 
-            if (_gameplayManager.allFruits[i].isUnlocked)
+            if (_gameplayManager.inventory.allFruits[i].isUnlocked)
             {
-                slot.appleName = _gameplayManager.allFruits[i].name;
-                slot.appleSprite = _gameplayManager.allFruits[i].img;
+                slot.appleName = _gameplayManager.inventory.allFruits[i].name;
+                slot.appleSprite = _gameplayManager.inventory.allFruits[i].sprite;
             }
             else
             {
@@ -72,13 +67,13 @@ public class Encyclopedia : MonoBehaviour
 
     public void UpdateEncyclopedia()
     {
-        for (int i = 0; i < _gameplayManager.allFruits.Count; i++)
+        for (int i = 0; i < _gameplayManager.inventory.allFruits.Count; i++)
         {
             AppleSlot slot = allFruitSlots[i].GetComponent<AppleSlot>();
-            if (_gameplayManager.allFruits[i].isUnlocked)
+            if (_gameplayManager.inventory.allFruits[i].isUnlocked)
             {
-                slot.name = _gameplayManager.allFruits[i].name;
-                slot.appleSprite = _gameplayManager.allFruits[i].img;
+                slot.name = _gameplayManager.inventory.allFruits[i].name;
+                slot.appleSprite = _gameplayManager.inventory.allFruits[i].sprite;
             }
             else
             {
@@ -93,33 +88,34 @@ public class Encyclopedia : MonoBehaviour
         Debug.Log("Display");
         AppleSlot info = slot.GetComponent<AppleSlot>();
         Fruit apple = null;
-        for (int i = 0; i < _gameplayManager.allFruits.Count; i++)
+        for (int i = 0; i < _gameplayManager.inventory.allFruits.Count; i++)
         {
-            if (_gameplayManager.allFruits[i].name == info.appleName)
+            if (_gameplayManager.inventory.allFruits[i].name == info.appleName)
             {
-                apple = _gameplayManager.allFruits[i];
+                apple = _gameplayManager.inventory.allFruits[i];
                 break;
-    }
+            }
         }
 
         if (apple != null)
-    {
+        {
             Debug.Log("apple found");
             appleInfoName.text = apple.name;
-            appleInfoImage.sprite = apple.img;
+            appleInfoImage.sprite = apple.sprite;
             appleInfoDescription.text = apple.description;
+            appleInfoRarity.text = apple.rarity.ToString();
         
             foreach (Recipe r in apple.recipeList)
             {
-                appleRecipeSlot1.sprite = r.fruit.img;
+                appleRecipeSlot1.sprite = r.fruit.sprite;
                 //TODO Ajouter le sprite de l'outil
         
-    }
+            }
 
             for (int i = 0; i < apple.recipeList.Count; i++)
             {
                 
-}
+            }
         }
     }
 }

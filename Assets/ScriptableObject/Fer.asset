@@ -17,7 +17,9 @@ MonoBehaviour:
     voulu la go\xFBter tel quel en ont perdu leurs dents, et leurs repas ne se r\xE9sument
     d\xE9sormais qu\u2019\xE0 de la nourriture liquide. Les manifestants s\u2019en
     servent pour briser des fen\xEAtres."
-  img: {fileID: 0}
+  rarity: 1
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

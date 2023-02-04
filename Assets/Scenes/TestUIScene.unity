@@ -1301,13 +1301,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd683950e693c1a49ae8e11e8b91331c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitToUse: {fileID: 0}
-  toolToUse: 0
-  allFruits:
-  - {fileID: 11400000, guid: 5272c2189593a4f489d194c6b58bd636, type: 2}
-  - {fileID: 11400000, guid: 8a4ebe8681bf4334199388c7a35712b0, type: 2}
-  - {fileID: 11400000, guid: 05ddccf0f5dcc5241bdb2e2d036e2256, type: 2}
-  inventory: {fileID: 0}
+  inventory: {fileID: 11400000, guid: b37bd825d58cc4ba7a4cdc8910a45b32, type: 2}
+  onFail:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &242353884
 Transform:
   m_ObjectHideFlags: 0

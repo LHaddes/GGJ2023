@@ -17,7 +17,9 @@ MonoBehaviour:
     est m\xFBre. Elle pimentera ais\xE9ment la nourriture fade de votre belle-m\xE8re.
     Son potentiel de piment est \xE9valu\xE9 a 6 666 666 sur l\u2019\xE9chelle de
     Scoville."
-  img: {fileID: 0}
+  rarity: 1
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList:

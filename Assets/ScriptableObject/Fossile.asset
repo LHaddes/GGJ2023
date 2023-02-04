@@ -19,7 +19,9 @@ MonoBehaviour:
     entreposer des aliments a l\u2019int\xE9rieur permet de les conserver l\xE9g\xE8rement
     plus longtemps. Les scientifiques se demandent si ce fruit n\u2019aurait pas
     un lien de parent\xE9 avec la Pomme Conserve."
-  img: {fileID: 0}
+  rarity: 4
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

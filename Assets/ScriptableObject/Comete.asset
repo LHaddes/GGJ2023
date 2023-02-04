@@ -18,7 +18,9 @@ MonoBehaviour:
     pr\xE9parer et la d\xE9guster, sa saveur exceptionnelle en fait l\u2019un des
     plats les plus chers et pris\xE9s du continent. Certains scientifique s\u2019accordent
     \xE0 dire qu\u2019elle est responsable de l\u2019extinction des dinosaures."
-  img: {fileID: 0}
+  rarity: 2
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

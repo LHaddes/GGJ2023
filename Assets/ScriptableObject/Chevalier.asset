@@ -18,7 +18,9 @@ MonoBehaviour:
     savoureuse, mais un go\xFBt proche de celui de la chaire humaine. Elle sera n\xE9anmoins
     un moyen de d\xE9fense redoutable lorsque vous vous ferez racketter votre t\xE9l\xE9phone
     dans la rue."
-  img: {fileID: 0}
+  rarity: 2
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

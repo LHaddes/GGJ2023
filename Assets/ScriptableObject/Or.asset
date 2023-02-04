@@ -19,7 +19,9 @@ MonoBehaviour:
     32 dentiers de 32 dents en or. En concentrant son attention dessus, il est possible
     d\u2019y ressentir une profonde puissance, complexe m\xE9lange d\u2019\xE9nergie
     draconienne et divine."
-  img: {fileID: 0}
+  rarity: 2
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

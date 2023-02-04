@@ -18,7 +18,9 @@ MonoBehaviour:
     accompagneront parfaitement votre pizza Norv\xE9gienne ou vos soirees tapas entre
     amis. Cependant attention \xE0 ne pas l\u2019emporter avec vous lors de vos sorties
     en mer, ou votre bateau finira probablement au fond de l\u2019ocean."
-  img: {fileID: 0}
+  rarity: 4
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

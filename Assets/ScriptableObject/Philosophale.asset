@@ -21,7 +21,9 @@ MonoBehaviour:
     absolue. Cuisiner la Pomme Philosophale en tarte et la partager en famille donne
     acc\xE8s \xE0 la lumi\xE8re inextinguible, de donner la vie \xE9ternelle, et
     de transmuter des\_m\xE9taux."
-  img: {fileID: 0}
+  rarity: 4
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

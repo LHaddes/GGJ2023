@@ -18,7 +18,9 @@ MonoBehaviour:
     alentours se r\xE9unissent \xE0 sa surface, pour apporter une saveur plus complexe
     et intense. La garder trop longtemps a l\u2019air libre peut attirer des Pommes
     Com\xE8te dans votre cuisine."
-  img: {fileID: 0}
+  rarity: 4
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList: []

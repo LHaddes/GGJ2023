@@ -10,10 +10,10 @@ public class BetaSelection : MonoBehaviour
   public Text selectedFruit;
 
   private Dictionary<Tool.ToolType, string> toolsLabels = new Dictionary<Tool.ToolType, string>(){
-    {Tool.ToolType.Tool1, "Hammer"},
-    {Tool.ToolType.Tool2, "Star"},
-    {Tool.ToolType.Tool3, "Eye"},
-    {Tool.ToolType.Tool4, "Element"},
+    {Tool.ToolType.Hammer, "Hammer"},
+    {Tool.ToolType.Star, "Star"},
+    {Tool.ToolType.Eye, "Eye"},
+    {Tool.ToolType.Element, "Element"},
 };
   void Start()
   {
@@ -25,12 +25,12 @@ public class BetaSelection : MonoBehaviour
     selectedTool.text = toolsLabels[tool];
   }
 
-  void ShowSelectedFruit(Fruit fruit)
+  public void ShowSelectedFruit(Fruit fruit)
   {
     selectedFruit.text = fruit.name;
   }
 
-  void Clear()
+  public void Clear()
   {
     selectedTool.text = "";
     selectedFruit.text = "";

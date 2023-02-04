@@ -17,6 +17,9 @@ public class UIManager : MonoBehaviour
   public Button fuseButton;
   public List<ToolButton> toolButtons;
 
+  public GameObject fruitButtonPrefab;
+  public RectTransform fruitsPanel;
+
   // Start is called before the first frame update
   void Start()
   {
@@ -25,6 +28,8 @@ public class UIManager : MonoBehaviour
     {
       btn.onSelect += SelectTool;
     }
+
+    inventory.onFruitsAvailableUpdated += FillFruitsPanel;
   }
 
   void SelectTool(Tool.ToolType tool)
@@ -48,9 +53,21 @@ public class UIManager : MonoBehaviour
     }
   }
 
-  // Update is called once per frame
-  void Update()
+  void FillFruitsPanel(List<Fruit> fruits)
   {
+    // Clear existing buttons
+    foreach (GameObject btn in fruitsPanel)
+    {
+      Destroy(btn);
+    }
 
+    // Add new buttons
+    foreach (Fruit fruit in fruits)
+    {
+      GameObject button = Instantiate(fruitButtonPrefab, fruitsPanel);
+      FruitButton fruitBtn = button.GetComponent<FruitButton>();
+      fruitBtn.fruit = fruit;
+      fruitBtn.onSelect += SelectFruit;
+    }
   }
 }

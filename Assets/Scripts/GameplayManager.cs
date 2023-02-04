@@ -9,6 +9,8 @@ public class GameplayManager : MonoBehaviour
     public Tool.ToolType toolToUse;
 
     public List<Fruit> allFruits = new List<Fruit>();
+    
+  public GameInventory inventory;
 
     void Awake()
     {
@@ -18,7 +20,7 @@ public class GameplayManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+    inventory.StartGame();
     }
 
     // Update is called once per frame
@@ -28,10 +30,10 @@ public class GameplayManager : MonoBehaviour
     }
 
     public void Fuse()
-    {   
+    {
         //On vérifie tous les fruits du jeu
         foreach (Fruit f in allFruits)
-        {  
+        {
             //Pour chaque fruit, on vérifie les différentes recettes possibles
             foreach (Recipe r in f.recipeList)
             {

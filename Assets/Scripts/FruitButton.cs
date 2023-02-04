@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(Button))]
+[RequireComponent(typeof(Button), typeof(Image))]
 public class FruitButton : MonoBehaviour
 {
   public Fruit fruit;
@@ -15,6 +15,8 @@ public class FruitButton : MonoBehaviour
   void Start()
   {
     GetComponent<Button>().onClick.AddListener(SelectFruit);
+    GetComponent<Image>().sprite = fruit.sprite;
+
     innerText.text = fruit.name;
   }
 

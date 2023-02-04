@@ -18,7 +18,7 @@ MonoBehaviour:
     Son potentiel de piment est \xE9valu\xE9 a 6 666 666 sur l\u2019\xE9chelle de
     Scoville."
   rarity: 1
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 92056ee460a09bfa1b0366059b7ac825, type: 3}
   mesh: {fileID: 4026673763926082877, guid: 5de72dd71d65245e1b5a2e2f4a4ba3d0, type: 3}
   isUnlocked: 1
   isUnlockedOnStart: 0

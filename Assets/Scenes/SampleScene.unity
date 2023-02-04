@@ -608,10 +608,34 @@ MonoBehaviour:
         m_CallState: 2
   onSelectFruit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1347573080}
+        m_TargetAssemblyTypeName: BetaSelection, Assembly-CSharp
+        m_MethodName: ShowSelectedFruit
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onClearSelection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1347573080}
+        m_TargetAssemblyTypeName: BetaSelection, Assembly-CSharp
+        m_MethodName: Clear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   inventory: {fileID: 11400000, guid: b37bd825d58cc4ba7a4cdc8910a45b32, type: 2}
   fuseButton: {fileID: 1087168420}
   toolButtons:
@@ -619,6 +643,8 @@ MonoBehaviour:
   - {fileID: 151753526}
   - {fileID: 1933463707}
   - {fileID: 631586702}
+  fruitButtonPrefab: {fileID: 284603321096261323, guid: 6294c30f35248e3b4a863060bff92263, type: 3}
+  fruitsPanel: {fileID: 1065208449}
 --- !u!1 &444880335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,6 +1206,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5272c2189593a4f489d194c6b58bd636, type: 2}
   - {fileID: 11400000, guid: 8a4ebe8681bf4334199388c7a35712b0, type: 2}
   - {fileID: 11400000, guid: 05ddccf0f5dcc5241bdb2e2d036e2256, type: 2}
+  inventory: {fileID: 11400000, guid: b37bd825d58cc4ba7a4cdc8910a45b32, type: 2}
 --- !u!4 &824907540
 Transform:
   m_ObjectHideFlags: 0
@@ -1411,13 +1438,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
+    m_Left: 10
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 3
   m_Spacing: 10
-  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
@@ -1667,7 +1694,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: '[fruit]'
 --- !u!222 &1197112823
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1827,7 +1854,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: '[tool]'
 --- !u!222 &1757337486
 CanvasRenderer:
   m_ObjectHideFlags: 0

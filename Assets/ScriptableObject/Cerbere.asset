@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
+  m_Name: Cerbere
+  m_EditorClassIdentifier: 
+  name: "Pomme Cerb\xE8re"
+  description: "La Pomme Cerb\xE8re est extr\xEAmement dangereuse pour quiconque
+    s\u2019approche de l\u2019une de ses 3 t\xEAtes. Chacune d\u2019entre elle a
+    d\u2019ailleurs un go\xFBt different : saumon, ananas et 4 fromages pour ravir
+    grands et petits. La l\xE9gende raconte que c\u2019est le fruit pr\xE9f\xE9r\xE9
+    d\u2019Hades, ou encore qu\u2019il est possible de l\u2019apprivoiser en lui
+    offrant des os d'impis."
+  rarity: 2
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
+  isUnlocked: 0
+  isUnlockedOnStart: 0
+  recipeList: []

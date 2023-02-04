@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
-  m_Name: Apple
+  m_Name: Conserve
   m_EditorClassIdentifier: 
-  name: Apple
-  description: 
-  img: {fileID: 0}
-  isUnlocked: 1
-  isUnlockedOnStart: 1
+  name: Pomme Conserve
+  description: "La Pomme Conserve est majoritairement constitu\xE9e d\u2019aluminium.
+    Elle n\u2019a absolument aucune saveur mais sera tr\xE8s utile pour conserver
+    vos plats. "
+  rarity: 3
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
+  isUnlocked: 0
+  isUnlockedOnStart: 0
   recipeList: []

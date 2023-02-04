@@ -10,10 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
-  m_Name: Apple2
+  m_Name: Ardente
   m_EditorClassIdentifier: 
-  name: Apple 2
-  img: {fileID: 0}
+  name: Pomme Ardente
+  description: "La Pomme Ardente peut atteindre une temp\xE9rature de 666\xB0C lorsqu\u2019elle
+    est m\xFBre. Elle pimentera ais\xE9ment la nourriture fade de votre belle-m\xE8re.
+    Son potentiel de piment est \xE9valu\xE9 a 6 666 666 sur l\u2019\xE9chelle de
+    Scoville."
+  rarity: 1
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
+  isUnlocked: 0
+  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 8a4ebe8681bf4334199388c7a35712b0, type: 2}
     tool: 1

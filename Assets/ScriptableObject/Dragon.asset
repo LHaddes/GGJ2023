@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
+  m_Name: Dragon
+  m_EditorClassIdentifier: 
+  name: Pomme Dragon
+  description: "La Pomme Dragon ressemble \xE0 s\u2019y m\xE9prendre a un dragon
+    : des \xE9cailles, des cornes et des yeux mena\xE7ants. Son go\xFBt est en fait
+    beaucoup plus fish-enthusiast. Le tr\xE8s renomm\xE9 Sacha Du-Bourg-Palais la
+    d\xE9cris comme \xAB\_Un go\xFBt de merlu avec une texture d\u2019anguille\_\xBB.
+    La Pomme Dragon murira plus vite si elle est entour\xE9e de Pomme d\u2019Or."
+  rarity: 3
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
+  isUnlocked: 0
+  isUnlockedOnStart: 0
+  recipeList: []

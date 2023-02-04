@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
+  m_Name: Ouroboros
+  m_EditorClassIdentifier: 
+  name: Pomme Ouroboros
+  description: "La Pomme Ouroboros n\u2019a pas de tige ni de trognon. La Pomme Ouroboros
+    n\u2019a ni commencement ni fin. En prendre une bouch\xE9e reviendrait \xE0 ne
+    ressentir plus que sa saveur jusqu\u2019a la fin de ses jours. Cependant son
+    gout citronn\xE9 est un bon compromis ! De sombres cultes l\u2019utilisent lors
+    de rites alchimiques pour performer des r\xE9surections qui finissent tr\xE8s
+    souvent en \xE9chec."
+  rarity: 3
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
+  isUnlocked: 0
+  isUnlockedOnStart: 0
+  recipeList: []

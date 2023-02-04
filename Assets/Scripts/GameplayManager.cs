@@ -10,22 +10,26 @@ public class GameplayManager : MonoBehaviour
 
   public UnityEvent onFail = new UnityEvent();
 
+  private bool started = false;
+
   void Awake()
   {
     Instance = this;
   }
 
-  // Start is called before the first frame update
-  void Start()
-  {
-    inventory.StartGame();
-  }
-
   // Update is called once per frame
   void Update()
   {
-
+      // TODO: Start menu
+      if (!started)
+      {
+        started = true;
+        inventory.StartGame();
+    
+      }
   }
+
+
 
   public void Fuse(Tool.ToolType tool, Fruit fruit)
   {

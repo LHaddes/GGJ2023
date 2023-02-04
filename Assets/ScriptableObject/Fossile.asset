@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
+  m_Name: Fossile
+  m_EditorClassIdentifier: 
+  name: Pomme Fossile
+  description: "La Pomme Fossile a l\u2019apparence d\u2019un fossile d\u2019ammonite
+    \xE0 l\u2019int\xE9rieur creux. Son apparence min\xE9rale est trompeuse, puisque
+    ce fruit se d\xE9guste en fait comme un savoureux sabl\xE9 aux amandes. Etrangement,
+    entreposer des aliments a l\u2019int\xE9rieur permet de les conserver l\xE9g\xE8rement
+    plus longtemps. Les scientifiques se demandent si ce fruit n\u2019aurait pas
+    un lien de parent\xE9 avec la Pomme Conserve."
+  rarity: 4
+  sprite: {fileID: 0}
+  mesh: {fileID: 0}
+  isUnlocked: 0
+  isUnlockedOnStart: 0
+  recipeList: []

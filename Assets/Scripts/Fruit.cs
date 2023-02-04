@@ -7,7 +7,9 @@ using UnityEngine;
 public class Fruit : ScriptableObject
 {
     public string name;
+    public string description;
     public Sprite img;
+    public bool isUnlocked;
     public List<Recipe> recipeList = new List<Recipe>();
 }
 

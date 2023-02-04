@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class GameInventory : ScriptableObject
 {
   public List<Fruit> allFruits = new List<Fruit>();
+  public Fruit defaultFruit;
 
   public UnityAction<Fruit> onFruitObtained;
   public UnityAction<List<Fruit>> onFruitsAvailableUpdated;
@@ -60,6 +61,6 @@ public class GameInventory : ScriptableObject
         }
       }
     }
-    return null;
+    return defaultFruit;
   }
 }

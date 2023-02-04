@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 788e0a17d46514352954fadcb5390017, type: 3}
+  m_Name: Tool Properties
+  m_EditorClassIdentifier: Assembly-CSharp::ToolPropertiesDefinition
+  tools:
+  - tool: 0
+    mesh: {fileID: 4026673763926082877, guid: 5de72dd71d65245e1b5a2e2f4a4ba3d0, type: 3}
+    sprite: {fileID: 0}
+  - tool: 2
+    mesh: {fileID: 4026673763926082877, guid: 5de72dd71d65245e1b5a2e2f4a4ba3d0, type: 3}
+    sprite: {fileID: 0}
+  - tool: 1
+    mesh: {fileID: 4026673763926082877, guid: 5de72dd71d65245e1b5a2e2f4a4ba3d0, type: 3}
+    sprite: {fileID: 0}
+  - tool: 3
+    mesh: {fileID: 4026673763926082877, guid: 5de72dd71d65245e1b5a2e2f4a4ba3d0, type: 3}
+    sprite: {fileID: 0}

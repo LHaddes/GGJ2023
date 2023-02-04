@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Extraterrestre
   m_EditorClassIdentifier: 
   name: Pomme Extraterrestre
-  description: "La Pomme Extraterrestre poss\xE8de des excroissances ressemblant
-    \xE0 des antennes, ainsi qu\u2019une poign\xE9e d\u2019yeux difformes. Sa teinte
-    verd\xE2tre laisse penser que son go\xFBt sera proche d\u2019un l\xE9gume ou
-    d\u2019un fruit, mais sa saveur et sa texture sont extr\xEAmement proches de
-    la morve humaine. Il parait qu\u2019elle provient d\u2019une lointaine plan\xE8te
+  description: "La Pomme Extraterrestre est extr\xEAmement sus. Son scaphandre laisse
+    deviner une ind\xE9niable intelligence qui lui permet d\u2019\xE9laborer de redoutables
+    strat\xE9gies pour tromper ses proches. Sa saveur et sa texture sont en tout
+    points similaires a ceux d\u2019une pomme, comme quoi il n\u2019est pas si bien
+    d\xE9guis\xE9. Il parait qu\u2019elle provient d\u2019une lointaine plan\xE8te
     de puissants guerriers."
   rarity: 3
   sprite: {fileID: 0}

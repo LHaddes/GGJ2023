@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &6373251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6373252}
+  m_Layer: 0
+  m_Name: ToolPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6373252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6373251}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.35, y: -2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 839624366}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &180286475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -167,12 +198,116 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 1e0099aea516fcaefabf9a3aa136056f, type: 2}
     - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectTool.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectFruit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onClearSelection.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectTool.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectTool.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
       propertyPath: onClickFuse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 626292373}
     - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectFruit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectFruit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectTool.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 839624367}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectFruit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 839624367}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onClearSelection.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
       propertyPath: onClickFuse.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Fuse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectTool.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onClearSelection.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 839624367}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectFruit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectTool.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowSelectedTool
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectFruit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowSelectedFruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onClearSelection.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onClearSelection.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Clear
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectTool.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SpawnObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectTool.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: BetaSelection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectFruit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SpawnObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectFruit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: BetaSelection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onClearSelection.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SpawnObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onClearSelection.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: BetaSelection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectTool.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onSelectFruit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720671520115666384, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
+      propertyPath: onClearSelection.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8720671520115666391, guid: 7bf13058cd889b084978336a6549a6b8, type: 3}
       propertyPath: m_Pivot.x
@@ -456,6 +591,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee3f137b1469357d4b3294ea00af088c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &839624365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 839624366}
+  - component: {fileID: 839624367}
+  m_Layer: 0
+  m_Name: SpawnObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &839624366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839624365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.21851724, y: 4.0193887, z: -1.8150194}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6373252}
+  - {fileID: 1970990956}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &839624367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839624365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0426f8a3e184f0abf61d0dba76e31d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FruitPosition: {fileID: 1970990956}
+  ToolPosition: {fileID: 6373252}
+  toolProperties: {fileID: 11400000, guid: 93cce571f2f9d4317a8be3aaa8a78ac1, type: 2}
 --- !u!1 &1138750295
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,6 +1172,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1970990955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1970990956}
+  m_Layer: 0
+  m_Name: FruitPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1970990956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970990955}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.55, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 839624366}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &460922707427134401
 MeshRenderer:

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Chat
   m_EditorClassIdentifier: 
   name: Pomme Chat
-  description: "La Pomme Chat arbore une \xE9tonnante fourrure soyeuse. Les gourmets
-    du monde entier s\u2019accordent \xE0 dire que son go\xFBt est un complexe m\xE9lange
+  description: "La Pomme Chat arbore une \xE9tonnante moustache. Les gourmets du
+    monde entier s\u2019accordent \xE0 dire que son go\xFBt est un complexe m\xE9lange
     de poulet, de brocoli et de riz cantonais. Ne lui donnez pas de lait apr\xE8s
     minuit !"
   rarity: 1

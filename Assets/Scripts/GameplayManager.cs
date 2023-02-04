@@ -4,39 +4,41 @@ using UnityEngine;
 
 public class GameplayManager : MonoBehaviour
 {
-    public Fruit fruitToUse;
-    public Tool.ToolType toolToUse;
+  public Fruit fruitToUse;
+  public Tool.ToolType toolToUse;
 
-    public List<Fruit> allFruits = new List<Fruit>();
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  public List<Fruit> allFruits = new List<Fruit>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  public GameInventory inventory;
 
-    public void Fuse()
+  // Start is called before the first frame update
+  void Start()
+  {
+    inventory.StartGame();
+  }
+
+  // Update is called once per frame
+  void Update()
+  {
+
+  }
+
+  public void Fuse()
+  {
+    foreach (Fruit f in allFruits)
     {
-        foreach (Fruit f in allFruits)
+      foreach (Recipe r in f.recipeList)
+      {
+        if (r.fruit == fruitToUse && r.tool == toolToUse)
         {
-            foreach (Recipe r in f.recipeList)
-            {
-                if (r.fruit == fruitToUse && r.tool == toolToUse)
-                {
-                    Fruit resultFruit = f;
-                    Debug.Log($"You just crafted {resultFruit.name}");
-                    
-                    return;
-                }
-            }
+          Fruit resultFruit = f;
+          Debug.Log($"You just crafted {resultFruit.name}");
+
+          return;
         }
-        
-        Debug.Log("Combinaison does not work");
+      }
     }
+
+    Debug.Log("Combinaison does not work");
+  }
 }

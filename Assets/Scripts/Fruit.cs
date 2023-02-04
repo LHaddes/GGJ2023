@@ -22,6 +22,7 @@ public class Fruit : ScriptableObject
     public Rarity rarity;
     public Sprite sprite;
     public GameObject mesh;
+    public AudioClip sound;
     public bool isUnlocked;
     public bool isUnlockedOnStart;
     public List<Recipe> recipeList = new List<Recipe>();

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
+  m_Name: Extraterrestre
+  m_EditorClassIdentifier: 
+  name: Pomme Extraterrestre
+  description: "La Pomme Extraterrestre est extr\xEAmement sus. Son scaphandre laisse
+    deviner une ind\xE9niable intelligence qui lui permet d\u2019\xE9laborer de redoutables
+    strat\xE9gies pour tromper ses proches. Sa saveur et sa texture sont en tout
+    points similaires a ceux d\u2019une pomme, comme quoi il n\u2019est pas si bien
+    d\xE9guis\xE9. Il parait qu\u2019elle provient d\u2019une lointaine plan\xE8te
+    de puissants guerriers."
+  rarity: 3
+  sprite: {fileID: 21300000, guid: 008f339371513924bbb7a18852c13d40, type: 3}
+  mesh: {fileID: 1493800285851769685, guid: 07bf970f37d7c9a498f12f899f529a9f, type: 3}
+  sound: {fileID: 0}
+  isUnlocked: 0
+  isUnlockedOnStart: 0
+  recipeList:
+  - fruit: {fileID: 11400000, guid: 8034ae302901249268ba54df18c61f83, type: 2}
+    tool: 1

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
+  m_Name: Robot
+  m_EditorClassIdentifier: 
+  name: Pomme Robot
+  description: "La Pomme Robot est enti\xE8rement faite de metal et d\u2019outils
+    informatiques en tout genre. Elle n\u2019est pas comestible mais r\xE9alisera
+    sans probl\xE8me votre comptabilit\xE9 du budget familial. Rendu en .csv garanti
+    ! La nuit, on l\u2019entend r\xE9p\xE9ter d\u2019une voix robotique : \xAB\_MIAOU-MIAOU-MIAOU\_\xBB."
+  rarity: 3
+  sprite: {fileID: 21300000, guid: b4fa90948963784468cd8fcb8ce66e93, type: 3}
+  mesh: {fileID: 919132149155446097, guid: 54c8bb5749d6d3d419e9715dbb6d947d, type: 3}
+  sound: {fileID: 0}
+  isUnlocked: 0
+  isUnlockedOnStart: 0
+  recipeList:
+  - fruit: {fileID: 11400000, guid: 8034ae302901249268ba54df18c61f83, type: 2}
+    tool: 0

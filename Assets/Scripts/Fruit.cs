@@ -6,16 +6,17 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Fruit/New Fruit")]
 public class Fruit : ScriptableObject
 {
-    public string name;
-    public string description;
-    public Sprite img;
-    public bool isUnlocked;
-    public List<Recipe> recipeList = new List<Recipe>();
+  public string name;
+  public string description;
+  public Sprite img;
+  public bool isUnlocked;
+  public bool isUnlockedOnStart;
+  public List<Recipe> recipeList = new List<Recipe>();
 }
 
 [Serializable]
 public class Recipe
 {
-    public Fruit fruit;
-    public Tool.ToolType tool;
+  public Fruit fruit;
+  public Tool.ToolType tool;
 }

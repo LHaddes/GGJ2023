@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
-  m_Name: Apple2
+  m_Name: Sirene
   m_EditorClassIdentifier: 
-  name: Apple 2
+  name: 
+  description: 
   img: {fileID: 0}
-  recipeList:
-  - fruit: {fileID: 11400000, guid: 8a4ebe8681bf4334199388c7a35712b0, type: 2}
-    tool: 1
-  - fruit: {fileID: 11400000, guid: 5272c2189593a4f489d194c6b58bd636, type: 2}
-    tool: 2
+  isUnlocked: 0
+  isUnlockedOnStart: 0
+  recipeList: []

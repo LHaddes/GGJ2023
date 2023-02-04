@@ -19,4 +19,8 @@ MonoBehaviour:
   mesh: {fileID: 0}
   isUnlocked: 0
   isUnlockedOnStart: 0
-  recipeList: []
+  recipeList:
+  - fruit: {fileID: 11400000, guid: b0a200c1ad2504256bc1a6705d717dce, type: 2}
+    tool: 1
+  - fruit: {fileID: 11400000, guid: 4aac3ce48216e44b988189220ed0616f, type: 2}
+    tool: 2

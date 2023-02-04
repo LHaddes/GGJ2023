@@ -20,7 +20,7 @@ public class GameplayManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    inventory.StartGame();
+   // inventory.StartGame();
     }
 
     // Update is called once per frame

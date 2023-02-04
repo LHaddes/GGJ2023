@@ -26,6 +26,18 @@ public class Fruit : ScriptableObject
     public bool isUnlocked;
     public bool isUnlockedOnStart;
     public List<Recipe> recipeList = new List<Recipe>();
+
+    public void OnEnable()
+    {
+        if (name != "Pomme")
+            isUnlocked = false;
+    }
+
+    public void OnDisable()
+    {
+        if (name != "Pomme")
+            isUnlocked = false;
+    }
 }
 
 [Serializable]

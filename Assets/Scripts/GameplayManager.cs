@@ -5,69 +5,66 @@ using UnityEngine.Events;
 
 public class GameplayManager : MonoBehaviour
 {
-    public static GameplayManager Instance;
-    public GameInventory inventory;
+  public static GameplayManager Instance;
+  public GameInventory inventory;
 
-    public UnityEvent onFail = new UnityEvent();
+  public UnityEvent onFail = new UnityEvent();
 
-    private bool started = false;
+  private bool started = false;
 
-    public GameObject pauseMenu;
-    private bool _isPaused;
+  public GameObject pauseMenu;
+  private bool _isPaused;
 
-    void Awake()
+  void Awake()
+  {
+    Instance = this;
+  }
+
+  // Update is called once per frame
+  void Update()
+  {
+    // TODO: Start menu
+    if (!started)
     {
-        Instance = this;
+      started = true;
+      inventory.StartGame();
     }
 
-    // Update is called once per frame
-    void Update()
+    if (Input.GetKeyDown(KeyCode.A))
     {
-        // TODO: Start menu
-        if (!started)
-        {
-            started = true;
-            inventory.StartGame();
-        }
-
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            inventory.ObtainFruit(inventory.allFruits[1]);
-        }
+      inventory.ObtainFruit(inventory.allFruits[1]);
     }
+  }
 
-    public void TogglePauseMenu()
+  public void TogglePauseMenu()
+  {
+    if (_isPaused)
     {
-        if (_isPaused)
-        {
-            Time.timeScale = 1f;
-            pauseMenu.SetActive(false);
-            _isPaused = false;
-        }
-        else
-        {
-            Time.timeScale = 0f;
-            pauseMenu.SetActive(true);
-            _isPaused = true;
-        }
+      Time.timeScale = 1f;
+      pauseMenu.SetActive(false);
+      _isPaused = false;
     }
-
-    public void Quit()
+    else
     {
-        Application.Quit();
+      Time.timeScale = 0f;
+      pauseMenu.SetActive(true);
+      _isPaused = true;
     }
+  }
+
+  public void Quit()
+  {
+    Application.Quit();
+  }
 
 
-    public void Fuse(Tool.ToolType tool, Fruit fruit)
+  public void Fuse(Tool.ToolType tool, Fruit fruit)
+  {
+    Fruit newFruit = inventory.GetFusion(tool, fruit);
+    if (newFruit == inventory.defaultFruit)
     {
-        Fruit newFruit = inventory.GetFusion(tool, fruit);
-        if (newFruit != null)
-        {
-            inventory.ObtainFruit(newFruit);
-        }
-        else
-        {
-            onFail.Invoke();
-        }
+      onFail.Invoke();
     }
+    inventory.ObtainFruit(newFruit);
+  }
 }

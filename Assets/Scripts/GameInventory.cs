@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class GameInventory : ScriptableObject
 {
   public List<Fruit> allFruits = new List<Fruit>();
+  public Fruit defaultFruit;
 
   public UnityAction<Fruit> onFruitObtained;
   public UnityAction<List<Fruit>> onFruitsAvailableUpdated;
@@ -28,13 +29,13 @@ public class GameInventory : ScriptableObject
   public void ObtainFruit(Fruit fruit)
   {
 
-    //onFruitObtained.Invoke(fruit);
+    onFruitObtained.Invoke(fruit);
     if (!fruit.isUnlocked)
     {
       fruit.isUnlocked = true;
       var availableFruits = ListAvailableFruits();
       unlockAppleInEncyclopedia.Invoke();
-     // onFruitsAvailableUpdated.Invoke(availableFruits);
+      onFruitsAvailableUpdated.Invoke(availableFruits);
 
       if (availableFruits.Count == allFruits.Count)
       {
@@ -60,6 +61,6 @@ public class GameInventory : ScriptableObject
         }
       }
     }
-    return null;
+    return defaultFruit;
   }
 }

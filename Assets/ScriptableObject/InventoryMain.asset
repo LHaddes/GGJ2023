@@ -13,6 +13,36 @@ MonoBehaviour:
   m_Name: InventoryMain
   m_EditorClassIdentifier: 
   allFruits:
-  - {fileID: 11400000, guid: 5272c2189593a4f489d194c6b58bd636, type: 2}
-  - {fileID: 11400000, guid: 8a4ebe8681bf4334199388c7a35712b0, type: 2}
   - {fileID: 11400000, guid: 05ddccf0f5dcc5241bdb2e2d036e2256, type: 2}
+  - {fileID: 11400000, guid: 8a4ebe8681bf4334199388c7a35712b0, type: 2}
+  - {fileID: 11400000, guid: 7fc4b88f82eee4100953b32164c142c3, type: 2}
+  - {fileID: 11400000, guid: 8034ae302901249268ba54df18c61f83, type: 2}
+  - {fileID: 11400000, guid: b0a200c1ad2504256bc1a6705d717dce, type: 2}
+  - {fileID: 11400000, guid: 4aac3ce48216e44b988189220ed0616f, type: 2}
+  - {fileID: 11400000, guid: e438785cfb99d4616ae8f7b4c889dc0d, type: 2}
+  - {fileID: 11400000, guid: ac3bd67458fe9468796f9d5aa5b6786d, type: 2}
+  - {fileID: 11400000, guid: fb506c42147424ef6bdf6c9191f6750e, type: 2}
+  - {fileID: 11400000, guid: 73adf13f8837a4bdfa3b336b995ad92a, type: 2}
+  - {fileID: 11400000, guid: 843ab62a7517b46f1b4fa119a163b629, type: 2}
+  - {fileID: 11400000, guid: 11fc0e0e205064c86a86b5524de15a69, type: 2}
+  - {fileID: 11400000, guid: 62567d7e244e44561a71024a254ec1d7, type: 2}
+  - {fileID: 11400000, guid: 6ca6abf6d4b204d70a201ec541d7e09e, type: 2}
+  - {fileID: 11400000, guid: 732334c85f5fc4b0f91330e106f3ab00, type: 2}
+  - {fileID: 11400000, guid: 065f017f96fd74ac4b211377ac973b32, type: 2}
+  - {fileID: 11400000, guid: 37649c509b36b48a588a65a0603a9546, type: 2}
+  - {fileID: 11400000, guid: a1820217e4be6405fb0a958f52dd618e, type: 2}
+  - {fileID: 11400000, guid: a7a67a3418e984f47bab510f47d49120, type: 2}
+  - {fileID: 11400000, guid: d084bb70e3714453d98b556da193c8f8, type: 2}
+  - {fileID: 11400000, guid: 6ffcc8846253849f589fb28cefafda6b, type: 2}
+  - {fileID: 11400000, guid: cbdfe0e8ce4ab4391bfda3026d8216db, type: 2}
+  - {fileID: 11400000, guid: 4373930d441354ce898cfc043dc7fcd0, type: 2}
+  - {fileID: 11400000, guid: 1aa56d3fe03da4a31b2a66cd4d0aa6a8, type: 2}
+  - {fileID: 11400000, guid: 49c371516510e4032a83265e201c4c8f, type: 2}
+  - {fileID: 11400000, guid: c587e25b41ac845cc8e8d62d72c6ed0c, type: 2}
+  - {fileID: 11400000, guid: b91081c763b4741a0ab5de83643346c2, type: 2}
+  - {fileID: 11400000, guid: 20980a89a2c814c5ca9e4c8012b13c1a, type: 2}
+  - {fileID: 11400000, guid: 5272c2189593a4f489d194c6b58bd636, type: 2}
+  defaultFruit: {fileID: 11400000, guid: 8a4ebe8681bf4334199388c7a35712b0, type: 2}
+  unlockAppleInEncyclopedia:
+    m_PersistentCalls:
+      m_Calls: []

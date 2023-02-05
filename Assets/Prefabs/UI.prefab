@@ -389,7 +389,7 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.78}
-  m_AnchorMax: {x: 0.88, y: 0.95}
+  m_AnchorMax: {x: 1, y: 0.95}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -422,7 +422,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: cba905ea46e4b2d4f8f2ab35800b4c4d, type: 3}
     m_FontSize: 41
     m_FontStyle: 1
     m_BestFit: 0
@@ -556,7 +556,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BetaSelection, Assembly-CSharp
+        m_TargetAssemblyTypeName: SpawnObject, Assembly-CSharp
         m_MethodName: ShowSelectedTool
         m_Mode: 0
         m_Arguments:
@@ -571,7 +571,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BetaSelection, Assembly-CSharp
+        m_TargetAssemblyTypeName: SpawnObject, Assembly-CSharp
         m_MethodName: ShowSelectedFruit
         m_Mode: 0
         m_Arguments:
@@ -586,7 +586,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BetaSelection, Assembly-CSharp
+        m_TargetAssemblyTypeName: SpawnObject, Assembly-CSharp
         m_MethodName: Clear
         m_Mode: 1
         m_Arguments:
@@ -599,7 +599,19 @@ MonoBehaviour:
         m_CallState: 2
   onFusionClickable:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Plant, Assembly-CSharp
+        m_MethodName: SetClickable
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onClickFuse:
     m_PersistentCalls:
       m_Calls:
@@ -615,7 +627,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  inventory: {fileID: 11400000, guid: b37bd825d58cc4ba7a4cdc8910a45b32, type: 2}
+  inventory: {fileID: 11400000, guid: 1e0099aea516fcaefabf9a3aa136056f, type: 2}
   toolButtons:
   - {fileID: 8720671519926354684}
   - {fileID: 7314964714563963299}
@@ -1461,7 +1473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8677328031948931284, guid: 6294c30f35248e3b4a863060bff92263, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -29.340004
+      value: -28.349998
       objectReference: {fileID: 0}
     - target: {fileID: 8677328031948931284, guid: 6294c30f35248e3b4a863060bff92263, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

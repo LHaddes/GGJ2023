@@ -39,6 +39,7 @@ public class UIManager : MonoBehaviour
     inventory.onAllFruitsFound += DisplayVictory;
 
     victoryScreen.SetActive(false);
+    notifications.CrossFadeAlpha(0f, 0.1f, true);
     notifications.text = "";
   }
 
@@ -103,9 +104,11 @@ public class UIManager : MonoBehaviour
 
   IEnumerator NotifyFruit(Fruit fruit)
   {
-    notifications.text = "You obtained a " + fruit.name + "!";
+    notifications.CrossFadeAlpha(1f, 0.4f, true);
+    notifications.text = fruit.name;
+
     yield return new WaitForSeconds(2f);
-    notifications.text = "";
+    notifications.CrossFadeAlpha(0f, 0.4f, true);
   }
 
   public void DisplayFail()

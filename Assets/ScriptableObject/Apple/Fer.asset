@@ -20,7 +20,7 @@ MonoBehaviour:
   rarity: 1
   sprite: {fileID: 21300000, guid: 7eaaaed902a941f41a2bf2110930d4e8, type: 3}
   mesh: {fileID: 1933211523772517813, guid: eed5f89877048324b9b4a7452a23876b, type: 3}
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 969e2350e5df32a41bab3e00b661121d, type: 3}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList:

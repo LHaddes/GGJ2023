@@ -68,17 +68,24 @@ public class Encyclopedia : MonoBehaviour
 
             if (_gameplayManager.inventory.allFruits[i].isUnlocked)
             {
-                slot.appleName = _gameplayManager.inventory.allFruits[i].name;
+                slot.name = _gameplayManager.inventory.allFruits[i].name;
+                slot.appleNameString = _gameplayManager.inventory.allFruits[i].name;
                 slot.appleSprite = _gameplayManager.inventory.allFruits[i].sprite;
             }
             else
             {
-                slot.appleName = "?????";
+                slot.name = "?????";
+                slot.appleNameString = "?????";
                 slot.appleSprite = unknownSprite;
             }
 
-            slot.GetComponent<Button>().onClick
-                .AddListener(() => DisplayAppleInfo(EventSystem.current.currentSelectedGameObject));
+            slot.GetComponent<Button>().onClick.AddListener(() =>
+            {
+                DisplayAppleInfo(EventSystem.current.currentSelectedGameObject);
+                Debug.Log("click");
+            });
+            
+            slot.UnlockSlot();
             
             if(i == 0)
                 DisplayAppleInfo(slot.gameObject);
@@ -93,13 +100,17 @@ public class Encyclopedia : MonoBehaviour
             if (_gameplayManager.inventory.allFruits[i].isUnlocked)
             {
                 slot.name = _gameplayManager.inventory.allFruits[i].name;
+                slot.appleNameString = _gameplayManager.inventory.allFruits[i].name;
                 slot.appleSprite = _gameplayManager.inventory.allFruits[i].sprite;
             }
             else
             {
                 slot.name = "?????";
+                slot.appleNameString = "?????";
                 slot.appleSprite = unknownSprite;
             }
+            
+            slot.UnlockSlot();
         }
     }
 
@@ -109,7 +120,7 @@ public class Encyclopedia : MonoBehaviour
         Fruit apple = null;
         for (int i = 0; i < _gameplayManager.inventory.allFruits.Count; i++)
         {
-            if (_gameplayManager.inventory.allFruits[i].name == info.appleName)
+            if (_gameplayManager.inventory.allFruits[i].name == info.appleNameString)
             {
                 apple = _gameplayManager.inventory.allFruits[i];
                 break;

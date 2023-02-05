@@ -16,7 +16,7 @@ MonoBehaviour:
   description: La Pomme Magicarpe utilise Trempette. Mais il ne se passe rien.
   rarity: 2
   sprite: {fileID: 21300000, guid: f86cad7da760d544fb0fa8ad44d6590c, type: 3}
-  mesh: {fileID: 0}
+  mesh: {fileID: 1060163142656247874, guid: 9a6229bc645af87419c51a736be58502, type: 3}
   sound: {fileID: 8300000, guid: 2c8d14f8fff7acf41b2b001f16985429, type: 3}
   isUnlocked: 0
   isUnlockedOnStart: 0

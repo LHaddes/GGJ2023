@@ -20,8 +20,8 @@ MonoBehaviour:
     de rites alchimiques pour performer des r\xE9surections qui finissent tr\xE8s
     souvent en \xE9chec."
   rarity: 3
-  sprite: {fileID: 0}
-  mesh: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 52b58728ba5cc674f87462d0633f405c, type: 3}
+  mesh: {fileID: 5898938644928852736, guid: 1b7647bca7370664da00ea98f8f21ba4, type: 3}
   sound: {fileID: 8300000, guid: c7b960bb9055c9e4ca8b4d1a53a5c087, type: 3}
   isUnlocked: 0
   isUnlockedOnStart: 0

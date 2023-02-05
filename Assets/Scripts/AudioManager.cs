@@ -96,4 +96,27 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PlayEncyclopedia (bool isOpen)
+    {
+        if (isOpen)
+        {
+            Sound s = Array.Find(sounds, sound => sound.name == "CloseEncyclopedia");
+            s.source.Play();
+        }
+        else
+        {
+            Sound s = Array.Find(sounds, sound => sound.name == "OpenEncyclopedia");
+            s.source.Play();
+        }
+    }
+
+    public void ClickInEncyclopedia (bool isInEncyclopedia)
+    {
+        if (isInEncyclopedia)
+        {
+            Sound s = Array.Find(sounds, sound => sound.name == "Click");
+            s.source.Play();
+        }
+    }
+
 }

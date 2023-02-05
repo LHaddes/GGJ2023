@@ -20,8 +20,8 @@ MonoBehaviour:
     et les plus grands experts en botanique l\u2019\xE9tudient pour cr\xE9er de nouvelles
     vari\xE9t\xE9s surprenantes."
   rarity: 4
-  sprite: {fileID: 0}
-  mesh: {fileID: 0}
+  sprite: {fileID: 21300000, guid: ed2c61a310370f34dbdfb4886ef4bb33, type: 3}
+  mesh: {fileID: 4567867969403661979, guid: 7aa8be0d03f9d7c47848fac0f952bb95, type: 3}
   sound: {fileID: 8300000, guid: 35e8c88fdd3570d45b11b44fb4c58c3c, type: 3}
   isUnlocked: 0
   isUnlockedOnStart: 0

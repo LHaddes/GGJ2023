@@ -19,9 +19,9 @@ MonoBehaviour:
     ! La nuit, on l\u2019entend r\xE9p\xE9ter d\u2019une voix robotique : \xAB\_MIAOU-MIAOU-MIAOU\_\xBB."
   rarity: 3
   sprite: {fileID: 21300000, guid: 55315f16cee23194baaf5b84a0b44b86, type: 3}
-  mesh: {fileID: 919132149155446097, guid: 54c8bb5749d6d3d419e9715dbb6d947d, type: 3}
+  mesh: {fileID: 8272971980032580222, guid: c0169862987995343959dc827cda9020, type: 3}
   sound: {fileID: 8300000, guid: 7cba90a1c4cc47c4f822b6a69e5714d5, type: 3}
-  isUnlocked: 1
+  isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 8034ae302901249268ba54df18c61f83, type: 2}

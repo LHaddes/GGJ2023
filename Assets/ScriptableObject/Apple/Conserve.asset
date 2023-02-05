@@ -18,7 +18,7 @@ MonoBehaviour:
     vos plats. "
   rarity: 3
   sprite: {fileID: 21300000, guid: fd8fec10631366048aa79ebc545a475a, type: 3}
-  mesh: {fileID: 0}
+  mesh: {fileID: 4488679646584123982, guid: 1840c8e2c79b8b34ea57fc255fd058eb, type: 3}
   sound: {fileID: 8300000, guid: 291f2704fa2c63049b7a1127949326d0, type: 3}
   isUnlocked: 0
   isUnlockedOnStart: 0

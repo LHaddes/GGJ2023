@@ -9,14 +9,15 @@ public class UIManager : MonoBehaviour
 {
     private Tool.ToolType? selectedTool = null;
     private Fruit selectedFruit = null;
+    private bool locked = false;
 
     public UnityEvent<Tool.ToolType> onSelectTool = new UnityEvent<Tool.ToolType>();
     public UnityEvent<Fruit> onSelectFruit = new UnityEvent<Fruit>();
     public UnityEvent onClearSelection = new UnityEvent();
+    public UnityEvent<bool> onFusionClickable = new UnityEvent<bool>();
     public UnityEvent<Tool.ToolType, Fruit> onClickFuse = new UnityEvent<Tool.ToolType, Fruit>();
 
     public GameInventory inventory;
-    public Button fuseButton;
     public List<ToolButton> toolButtons;
 
     public TMP_Text notifications;
@@ -38,42 +39,46 @@ public class UIManager : MonoBehaviour
         inventory.onFruitObtained += DisplayFruitObtained;
         inventory.onAllFruitsFound += DisplayVictory;
 
-        fuseButton.interactable = false;
-        fuseButton.onClick.AddListener(FuseSelected);
 
-        if(victoryScreen.activeInHierarchy)
+        if (victoryScreen.activeInHierarchy)
             victoryScreen.SetActive(false);
-        
+        notifications.CrossFadeAlpha(0f, 0.1f, true);
+
         notifications.text = "";
     }
 
     void SelectTool(Tool.ToolType tool)
     {
+        if (locked) return;
+
         selectedTool = tool;
         onSelectTool.Invoke(tool);
 
         if (selectedFruit != null)
         {
-            fuseButton.interactable = true;
+            onFusionClickable.Invoke(true);
         }
     }
 
     void SelectFruit(Fruit fruit)
     {
+        if (locked) return;
+
         selectedFruit = fruit;
         onSelectFruit.Invoke(fruit);
 
         if (selectedTool != null)
         {
-            fuseButton.interactable = true;
+            onFusionClickable.Invoke(true);
         }
     }
 
-    void FuseSelected()
+    public void ClickFuse()
     {
         if (selectedTool != null && selectedFruit != null)
         {
             onClickFuse.Invoke(selectedTool.GetValueOrDefault(), selectedFruit);
+            locked = true;
         }
     }
 
@@ -97,8 +102,17 @@ public class UIManager : MonoBehaviour
 
     public void DisplayFruitObtained(Fruit fruit)
     {
-        notifications.text = "You obtained a " + fruit.name + "!";
         ResetSelection();
+        StartCoroutine(NotifyFruit(fruit));
+    }
+
+    IEnumerator NotifyFruit(Fruit fruit)
+    {
+        notifications.CrossFadeAlpha(1f, 0.4f, true);
+        notifications.text = fruit.name;
+
+        yield return new WaitForSeconds(2f);
+        notifications.CrossFadeAlpha(0f, 0.4f, true);
     }
 
     public void DisplayFail()
@@ -116,7 +130,12 @@ public class UIManager : MonoBehaviour
     {
         selectedTool = null;
         selectedFruit = null;
-        fuseButton.interactable = false;
+        onFusionClickable.Invoke(false);
         onClearSelection.Invoke();
+    }
+
+    public void Unlock()
+    {
+        locked = false;
     }
 }

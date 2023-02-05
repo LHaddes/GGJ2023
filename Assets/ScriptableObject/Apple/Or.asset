@@ -20,8 +20,8 @@ MonoBehaviour:
     d\u2019y ressentir une profonde puissance, complexe m\xE9lange d\u2019\xE9nergie
     draconienne et divine."
   rarity: 2
-  sprite: {fileID: 0}
-  mesh: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 10a2dd3e2837a074b9b6cc1f0b509e1f, type: 3}
+  mesh: {fileID: 5554678244620205109, guid: d38fcb8ef81625f45b8cd5bf2e08abf6, type: 3}
   sound: {fileID: 8300000, guid: e972718ab7f27af41878cb28ad000e44, type: 3}
   isUnlocked: 0
   isUnlockedOnStart: 0

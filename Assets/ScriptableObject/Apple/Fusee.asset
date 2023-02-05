@@ -19,8 +19,8 @@ MonoBehaviour:
     avec une Pomme Ardente pour la d\xE9guster. Elon Musk s\u2019inspire de celle-ci
     pour developper sa fusee Starship."
   rarity: 3
-  sprite: {fileID: 0}
-  mesh: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 91393f97e484879499e40e4803635beb, type: 3}
+  mesh: {fileID: 6268439379256353313, guid: e5f07cf5680f76d43adcc0b9cd96f6aa, type: 3}
   sound: {fileID: 8300000, guid: 2d87597d5c5e1cd408f56e9b3959eeec, type: 3}
   isUnlocked: 0
   isUnlockedOnStart: 0

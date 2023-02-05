@@ -20,7 +20,7 @@ MonoBehaviour:
     dans la rue."
   rarity: 2
   sprite: {fileID: 21300000, guid: e64e78e3852999948bbf4d36ed4c30d4, type: 3}
-  mesh: {fileID: 0}
+  mesh: {fileID: 7372233089622120078, guid: 2a7ac7abcb38afe4ba48ba99e0818bdc, type: 3}
   sound: {fileID: 8300000, guid: 692958fb715b1194ab931a1b4c0eb260, type: 3}
   isUnlocked: 0
   isUnlockedOnStart: 0

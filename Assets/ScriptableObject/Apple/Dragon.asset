@@ -20,7 +20,7 @@ MonoBehaviour:
     La Pomme Dragon murira plus vite si elle est entour\xE9e de Pomme d\u2019Or."
   rarity: 3
   sprite: {fileID: 21300000, guid: 0d3c0af0e0012d147b0cee28abe16d10, type: 3}
-  mesh: {fileID: 0}
+  mesh: {fileID: 3384158776613590058, guid: 7fef196d7964c2548a28ea3261a9534b, type: 3}
   sound: {fileID: 8300000, guid: ccf02779c0076424a8bafa13de74f81f, type: 3}
   isUnlocked: 0
   isUnlockedOnStart: 0

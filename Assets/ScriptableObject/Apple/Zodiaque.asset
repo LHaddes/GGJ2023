@@ -20,8 +20,8 @@ MonoBehaviour:
     juste un go\xFBt de pomme. Pour bien la laisser m\xFBrir, il est conseill\xE9
     de la poser tout en haut des escaliers de votre foyer."
   rarity: 3
-  sprite: {fileID: 0}
-  mesh: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 303cd2fae9b054b44ad637167255b78c, type: 3}
+  mesh: {fileID: 2660295603466007646, guid: 795e9dd763854bd41a0b37d9dd19f5b9, type: 3}
   sound: {fileID: 8300000, guid: 965d4d7aceb9b31448ff32e20bcd79c4, type: 3}
   isUnlocked: 0
   isUnlockedOnStart: 0

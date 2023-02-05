@@ -24,6 +24,7 @@ public class Encyclopedia : MonoBehaviour
     public Image appleToolSlot1;
     public Image appleRecipeSlot2;
     public Image appleToolSlot2;
+    public GameObject firstRecipePanel;
     public GameObject secondRecipePanel;
 
     public static Encyclopedia Instance;
@@ -79,15 +80,11 @@ public class Encyclopedia : MonoBehaviour
                 slot.appleSprite = unknownSprite;
             }
 
-            slot.GetComponent<Button>().onClick.AddListener(() =>
-            {
-                DisplayAppleInfo(EventSystem.current.currentSelectedGameObject);
-                Debug.Log("click");
-            });
-            
+            slot.GetComponent<Button>().onClick.AddListener(() => DisplayAppleInfo(EventSystem.current.currentSelectedGameObject));
+
             slot.UnlockSlot();
-            
-            if(i == 0)
+
+            if (i == 0)
                 DisplayAppleInfo(slot.gameObject);
         }
     }
@@ -109,7 +106,7 @@ public class Encyclopedia : MonoBehaviour
                 slot.appleNameString = "?????";
                 slot.appleSprite = unknownSprite;
             }
-            
+
             slot.UnlockSlot();
         }
     }
@@ -134,6 +131,12 @@ public class Encyclopedia : MonoBehaviour
             appleInfoDescription.text = apple.description;
             appleInfoRarity.text = apple.rarity.ToString();
 
+            if (apple.recipeList.Count < 1)
+            {
+                firstRecipePanel.SetActive(false);
+                secondRecipePanel.SetActive(false);
+            }
+
             if (apple.recipeList.Count > 1)
             {
                 appleRecipeSlot1.sprite = apple.recipeList[0].fruit.sprite;
@@ -147,10 +150,9 @@ public class Encyclopedia : MonoBehaviour
                     appleRecipeSlot1.sprite = r.fruit.sprite;
                     //TODO Ajouter le sprite de l'outil
                 }
-                
+
                 secondRecipePanel.SetActive(false);
             }
-            
         }
     }
 }

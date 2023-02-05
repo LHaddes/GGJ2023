@@ -2279,4 +2279,5 @@ MonoBehaviour:
   appleToolSlot1: {fileID: 0}
   appleRecipeSlot2: {fileID: 6009027578508948647}
   appleToolSlot2: {fileID: 0}
+  firstRecipePanel: {fileID: 6009027577495978733}
   secondRecipePanel: {fileID: 6009027577904852833}

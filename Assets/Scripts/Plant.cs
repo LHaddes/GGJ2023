@@ -81,6 +81,7 @@ public class Plant : MonoBehaviour
     if (clickable)
     {
       OnClick.Invoke();
+      OnMouseHover.Invoke(false);
     }
   }
 

@@ -8,6 +8,7 @@ public class GameplayManager : MonoBehaviour
   public static GameplayManager Instance;
   public GameInventory inventory;
 
+  public UnityEvent onStartGame = new UnityEvent();
   public UnityEvent<bool> onFuse = new UnityEvent<bool>();
   public UnityEvent onEndTurn = new UnityEvent();
 
@@ -21,20 +22,10 @@ public class GameplayManager : MonoBehaviour
     Instance = this;
   }
 
-  // Update is called once per frame
-  void Update()
+  public void StartGame()
   {
-    // TODO: Start menu
-    if (!started)
-    {
-      started = true;
-      inventory.StartGame();
-    }
-
-    if (Input.GetKeyDown(KeyCode.A))
-    {
-      inventory.ObtainFruit(inventory.allFruits[1]);
-    }
+    started = true;
+    inventory.StartGame();
   }
 
   public void TogglePauseMenu()

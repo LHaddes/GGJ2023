@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class Encyclopedia : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class Encyclopedia : MonoBehaviour
     public GameObject secondRecipePanel;
 
     public static Encyclopedia Instance;
+    public UnityEvent<bool> ToggleEncyclopedia = new UnityEvent<bool>();
+    public UnityEvent<bool> ClickInEncyclopedia = new UnityEvent<bool>();
     private GameplayManager _gameplayManager;
 
 
@@ -44,18 +47,27 @@ public class Encyclopedia : MonoBehaviour
         InitEncyclopedia();
     }
 
+
     public void ToggleEncyclopediaPanel()
     {
         if (_panelIsActive)
         {
             uiPanel.SetActive(false);
             _panelIsActive = false;
+            ToggleEncyclopedia.Invoke(true);
         }
         else
         {
             uiPanel.SetActive(true);
             _panelIsActive = true;
+            ToggleEncyclopedia.Invoke(false);
         }
+    }
+
+    void Update ()
+    {
+        if (_panelIsActive && Input.GetMouseButtonDown(0))
+            ClickInEncyclopedia.Invoke(true);
     }
 
 

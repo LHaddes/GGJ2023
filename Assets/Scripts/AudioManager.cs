@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
     private bool isPotHover = false;
+    public ToolPropertiesDefinition toolDefinition;
 
     void Awake () {
         foreach (Sound s in sounds)
@@ -57,4 +58,19 @@ public class AudioManager : MonoBehaviour
         Stop("FuseHoverLoop");
     }
 
+    public void PlayFruit (Fruit fruit)
+    {
+        AudioSource ManagerSource = GetComponent<AudioSource>();
+        ManagerSource.clip = fruit.sound;
+        ManagerSource.Play();
+    }
+
+    public void PlayTool (Tool.ToolType tool)
+    {
+        Debug.Log(toolDefinition);
+        ToolProperties toolProperty = toolDefinition.tools.Find(property => property.tool == tool);
+        AudioSource ManagerSource = GetComponent<AudioSource>();
+        ManagerSource.clip = toolProperty.sound;
+        ManagerSource.Play();
+    }
 }

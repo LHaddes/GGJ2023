@@ -21,6 +21,12 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    void Start ()
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == "Music");
+        s.source.Play();
+    }
+
     public void Play (string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
@@ -73,4 +79,25 @@ public class AudioManager : MonoBehaviour
         ManagerSource.clip = toolProperty.sound;
         ManagerSource.Play();
     }
+
+    public void PlayFuse ()
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == "Fuse");
+        s.source.Play();
+    }
+
+    public void PlayResult(bool result)
+    {
+        if (result)
+        {
+            Sound s = Array.Find(sounds, sound => sound.name == "ResultSuccess");
+            s.source.Play();
+        }
+        else
+        {
+            Sound s = Array.Find(sounds, sound => sound.name == "ResultFailure");
+            s.source.Play();
+        }
+    }
+
 }

@@ -10,6 +10,7 @@ public class ToolProperties
   public Tool.ToolType tool;
   public GameObject mesh;
   public GameObject sprite;
+  public AudioClip sound;
 }
 
 [CreateAssetMenu(menuName = "Tool/Properties Definition")]

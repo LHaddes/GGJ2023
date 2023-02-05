@@ -17,7 +17,7 @@ MonoBehaviour:
     Elle n\u2019a absolument aucune saveur mais sera tr\xE8s utile pour conserver
     vos plats. "
   rarity: 3
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: fd8fec10631366048aa79ebc545a475a, type: 3}
   mesh: {fileID: 0}
   sound: {fileID: 8300000, guid: 291f2704fa2c63049b7a1127949326d0, type: 3}
   isUnlocked: 0

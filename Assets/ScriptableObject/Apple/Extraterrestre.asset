@@ -20,10 +20,10 @@ MonoBehaviour:
     d\xE9guis\xE9. Il parait qu\u2019elle provient d\u2019une lointaine plan\xE8te
     de puissants guerriers."
   rarity: 3
-  sprite: {fileID: 21300000, guid: 008f339371513924bbb7a18852c13d40, type: 3}
+  sprite: {fileID: 21300000, guid: de3dd94f6cfc4a54180dcaeb38fe4cef, type: 3}
   mesh: {fileID: 1493800285851769685, guid: 07bf970f37d7c9a498f12f899f529a9f, type: 3}
   sound: {fileID: 8300000, guid: 83ed0381c84172f4aa62ff0270b51433, type: 3}
-  isUnlocked: 0
+  isUnlocked: 1
   isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 8034ae302901249268ba54df18c61f83, type: 2}

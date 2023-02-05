@@ -21,7 +21,7 @@ MonoBehaviour:
     obscene et hypnotique. Fun fact : les \xAB\_coquillages\_\xBB sont en fait ses
     yeux, et elle est tr\xE8s en col\xE8re."
   rarity: 3
-  sprite: {fileID: 21300000, guid: e6c8fec230271d049ba5974b3a54b295, type: 3}
+  sprite: {fileID: 21300000, guid: 5ba254ea5644a0149a4ec0f9a538b3dd, type: 3}
   mesh: {fileID: 5288997013739502704, guid: 98ba8bccdf5852344bfbb38d5bb9e908, type: 3}
   sound: {fileID: 8300000, guid: 8a65df6546d8bdd49a0f0cf01fd749cb, type: 3}
   isUnlocked: 0

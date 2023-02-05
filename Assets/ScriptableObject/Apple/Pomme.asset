@@ -17,7 +17,7 @@ MonoBehaviour:
     au contact de certains outils. Son ADN poss\xE8de de nombreuses possibilit\xE9s
     d\u2019evolutions"
   rarity: 0
-  sprite: {fileID: 21300000, guid: dade916ccb463ee4eb3ef8980c4f5d64, type: 3}
+  sprite: {fileID: 21300000, guid: d18e14adeadb3e14c860c52f0cb69207, type: 3}
   mesh: {fileID: 4455313464291027932, guid: 72f838f36b5a72245a8fc6cbd574fcfb, type: 3}
   sound: {fileID: 8300000, guid: cb098637e7b892742a22cbca3d85fa37, type: 3}
   isUnlocked: 1

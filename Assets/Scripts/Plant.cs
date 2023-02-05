@@ -11,6 +11,7 @@ public class Plant : MonoBehaviour
 
   public UnityEvent OnClick = new UnityEvent();
   public UnityEvent OnResetAnimationEnd = new UnityEvent();
+  public UnityEvent<bool> OnMouseHover = new UnityEvent<bool>();
 
   public GameInventory inventory;
 
@@ -62,12 +63,17 @@ public class Plant : MonoBehaviour
     if (clickable)
     {
       pot.material = potHighlightMaterial;
+      OnMouseHover.Invoke(true);
     }
   }
 
   void OnMouseExit()
   {
-    pot.material = potDefaultMaterial;
+    if (clickable)
+    {
+      pot.material = potDefaultMaterial;
+      OnMouseHover.Invoke(false);
+    }
   }
 
   void OnMouseDown()

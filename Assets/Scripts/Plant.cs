@@ -22,6 +22,7 @@ public class Plant : MonoBehaviour
   public MeshRenderer bud;
   public MeshRenderer tree;
   public MeshRenderer ashes;
+  public ParticleSystem smoke;
 
   public Transform fruitsGrowth;
 
@@ -31,6 +32,7 @@ public class Plant : MonoBehaviour
     tree.gameObject.SetActive(false);
     ashes.gameObject.SetActive(false);
     fruitsGrowth.gameObject.SetActive(false);
+    smoke.Stop();
 
     inventory.onFruitObtained += GrowFruits;
   }
@@ -50,6 +52,15 @@ public class Plant : MonoBehaviour
     {
       ashes.gameObject.SetActive(true);
     }
+
+    StartCoroutine(ActivateSmoke());
+  }
+
+  IEnumerator ActivateSmoke()
+  {
+    smoke.Play();
+    yield return new WaitForSeconds(0.1f);
+    smoke.Stop();
   }
 
   public void GrowFruits(Fruit fruit)

@@ -6,114 +6,129 @@ using UnityEngine.Events;
 
 public class UIManager : MonoBehaviour
 {
-    private Tool.ToolType? selectedTool = null;
-    private Fruit selectedFruit = null;
+  private Tool.ToolType? selectedTool = null;
+  private Fruit selectedFruit = null;
+  private bool locked = false;
 
-    public UnityEvent<Tool.ToolType> onSelectTool = new UnityEvent<Tool.ToolType>();
-    public UnityEvent<Fruit> onSelectFruit = new UnityEvent<Fruit>();
-    public UnityEvent onClearSelection = new UnityEvent();
-    public UnityEvent<Tool.ToolType, Fruit> onClickFuse = new UnityEvent<Tool.ToolType, Fruit>();
+  public UnityEvent<Tool.ToolType> onSelectTool = new UnityEvent<Tool.ToolType>();
+  public UnityEvent<Fruit> onSelectFruit = new UnityEvent<Fruit>();
+  public UnityEvent onClearSelection = new UnityEvent();
+  public UnityEvent<bool> onFusionClickable = new UnityEvent<bool>();
+  public UnityEvent<Tool.ToolType, Fruit> onClickFuse = new UnityEvent<Tool.ToolType, Fruit>();
 
-    public GameInventory inventory;
-    public Button fuseButton;
-    public List<ToolButton> toolButtons;
+  public GameInventory inventory;
+  public List<ToolButton> toolButtons;
 
-    public Text notifications;
-    public GameObject victoryScreen;
+  public Text notifications;
+  public GameObject victoryScreen;
 
-    public GameObject fruitButtonPrefab;
-    public RectTransform fruitsPanel;
+  public GameObject fruitButtonPrefab;
+  public RectTransform fruitsPanel;
 
-    // Start is called before the first frame update
-    void Start()
+  // Start is called before the first frame update
+  void Start()
+  {
+    // Connect tools buttons to event
+    foreach (ToolButton btn in toolButtons)
     {
-        // Connect tools buttons to event
-        foreach (ToolButton btn in toolButtons)
-        {
-            btn.onSelect += SelectTool;
-        }
-
-        inventory.onFruitsAvailableUpdated += FillFruitsPanel;
-        inventory.onFruitObtained += DisplayFruitObtained;
-        inventory.onAllFruitsFound += DisplayVictory;
-
-        fuseButton.interactable = false;
-        fuseButton.onClick.AddListener(FuseSelected);
-
-        victoryScreen.SetActive(false);
-        notifications.text = "";
+      btn.onSelect += SelectTool;
     }
 
-    void SelectTool(Tool.ToolType tool)
-    {
-        selectedTool = tool;
-        onSelectTool.Invoke(tool);
+    inventory.onFruitsAvailableUpdated += FillFruitsPanel;
+    inventory.onFruitObtained += DisplayFruitObtained;
+    inventory.onAllFruitsFound += DisplayVictory;
 
-        if (selectedFruit != null)
-        {
-            fuseButton.interactable = true;
-        }
+    victoryScreen.SetActive(false);
+    notifications.text = "";
+  }
+
+  void SelectTool(Tool.ToolType tool)
+  {
+    if (locked) return;
+
+    selectedTool = tool;
+    onSelectTool.Invoke(tool);
+
+    if (selectedFruit != null)
+    {
+      onFusionClickable.Invoke(true);
+    }
+  }
+
+  void SelectFruit(Fruit fruit)
+  {
+    if (locked) return;
+
+    selectedFruit = fruit;
+    onSelectFruit.Invoke(fruit);
+
+    if (selectedTool != null)
+    {
+      onFusionClickable.Invoke(true);
+    }
+  }
+
+  public void ClickFuse()
+  {
+    if (selectedTool != null && selectedFruit != null)
+    {
+      onClickFuse.Invoke(selectedTool.GetValueOrDefault(), selectedFruit);
+      locked = true;
+    }
+  }
+
+  void FillFruitsPanel(List<Fruit> fruits)
+  {
+    // Clear existing buttons
+    foreach (Transform btn in fruitsPanel)
+    {
+      Destroy(btn.gameObject);
     }
 
-    void SelectFruit(Fruit fruit)
+    // Add new buttons
+    foreach (Fruit fruit in fruits)
     {
-        selectedFruit = fruit;
-        onSelectFruit.Invoke(fruit);
-
-        if (selectedTool != null)
-        {
-            fuseButton.interactable = true;
-        }
+      GameObject button = Instantiate(fruitButtonPrefab, fruitsPanel);
+      FruitButton fruitBtn = button.GetComponent<FruitButton>();
+      fruitBtn.fruit = fruit;
+      fruitBtn.onSelect += SelectFruit;
     }
+  }
 
-    void FuseSelected()
-    {
-        if (selectedTool != null && selectedFruit != null)
-        {
-            onClickFuse.Invoke(selectedTool.GetValueOrDefault(), selectedFruit);
-        }
-    }
+  public void DisplayFruitObtained(Fruit fruit)
+  {
+    ResetSelection();
+    StartCoroutine(NotifyFruit(fruit));
+  }
 
-    void FillFruitsPanel(List<Fruit> fruits)
-    {
-        // Clear existing buttons
-        foreach (Transform btn in fruitsPanel)
-        {
-            Destroy(btn.gameObject);
-        }
+  IEnumerator NotifyFruit(Fruit fruit)
+  {
+    notifications.text = "You obtained a " + fruit.name + "!";
+    yield return new WaitForSeconds(2f);
+    notifications.text = "";
+  }
 
-        // Add new buttons
-        foreach (Fruit fruit in fruits)
-        {
-            GameObject button = Instantiate(fruitButtonPrefab, fruitsPanel);
-            FruitButton fruitBtn = button.GetComponent<FruitButton>();
-            fruitBtn.fruit = fruit;
-            fruitBtn.onSelect += SelectFruit;
-        }
-    }
+  public void DisplayFail()
+  {
+    notifications.text = "Nothing happens…";
+    ResetSelection();
+  }
 
-    public void DisplayFruitObtained(Fruit fruit)
-    {
-        notifications.text = "You obtained a " + fruit.name + "!";
-        ResetSelection();
-    }
+  public void DisplayVictory()
+  {
+    victoryScreen.SetActive(true);
+  }
 
-    public void DisplayFail()
-    {
-        notifications.text = "Nothing happens…";
-        ResetSelection();
-    }
+  void ResetSelection()
+  {
+    selectedTool = null;
+    selectedFruit = null;
+    onFusionClickable.Invoke(false);
+    onClearSelection.Invoke();
+  }
 
-    public void DisplayVictory()
-    {
-        victoryScreen.SetActive(true);
-    }
-
-    void ResetSelection()
-    {
-        selectedTool = null;
-        selectedFruit = null;
-        fuseButton.interactable = false;
-        onClearSelection.Invoke();
-    }
+  public void Unlock()
+  {
+    locked = false;
+  }
 }

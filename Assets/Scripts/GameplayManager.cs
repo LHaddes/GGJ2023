@@ -8,7 +8,8 @@ public class GameplayManager : MonoBehaviour
   public static GameplayManager Instance;
   public GameInventory inventory;
 
-  public UnityEvent onFail = new UnityEvent();
+  public UnityEvent<bool> onFuse = new UnityEvent<bool>();
+  public UnityEvent onEndTurn = new UnityEvent();
 
   private bool started = false;
 
@@ -61,10 +62,15 @@ public class GameplayManager : MonoBehaviour
   public void Fuse(Tool.ToolType tool, Fruit fruit)
   {
     Fruit newFruit = inventory.GetFusion(tool, fruit);
-    if (newFruit == inventory.defaultFruit)
-    {
-      onFail.Invoke();
-    }
+    onFuse.Invoke(newFruit != inventory.defaultFruit);
     inventory.ObtainFruit(newFruit);
+
+    StartCoroutine(EndTurn());
+  }
+
+  IEnumerator EndTurn()
+  {
+    yield return new WaitForSeconds(2f);
+    onEndTurn.Invoke();
   }
 }

@@ -21,6 +21,7 @@ MonoBehaviour:
   rarity: 4
   sprite: {fileID: 0}
   mesh: {fileID: 0}
+  sound: {fileID: 8300000, guid: 24df83719058db54d9d8ecc6f261fe9f, type: 3}
   isUnlocked: 0
   isUnlockedOnStart: 0
   recipeList:

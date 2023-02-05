@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
 
 
   public TMP_Text notifications;
-  public GameObject victoryScreen;
+  public GameObject victoryMessage;
   public GameObject startScreen;
   public GameObject[] gameUI;
 
@@ -48,8 +48,8 @@ public class UIManager : MonoBehaviour
     inventory.onAllFruitsFound += DisplayVictory;
 
 
-    if (victoryScreen.activeInHierarchy)
-      victoryScreen.SetActive(false);
+    if (victoryMessage.activeInHierarchy)
+      victoryMessage.SetActive(false);
     notifications.CrossFadeAlpha(0f, 0.1f, true);
 
     notifications.text = "";
@@ -151,7 +151,14 @@ public class UIManager : MonoBehaviour
 
   public void DisplayVictory()
   {
-    victoryScreen.SetActive(true);
+    victoryMessage.SetActive(true);
+    StartCoroutine(RemoveVictoryMessage());
+  }
+
+  IEnumerator RemoveVictoryMessage()
+  {
+    yield return new WaitForSeconds(2f);
+    victoryMessage.SetActive(false);
   }
 
   void ResetSelection()

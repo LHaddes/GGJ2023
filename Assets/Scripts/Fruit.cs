@@ -12,11 +12,11 @@ public class Fruit : ScriptableObject
     [Serializable]
     public enum Rarity
     {
-      Base,
-      Common,
+      Basique,
+      Commune,
       Rare,
-      Epic,
-      Legendary
+      Epique,
+      Légendaire
     }
 
     public Rarity rarity;

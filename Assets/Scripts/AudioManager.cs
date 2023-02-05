@@ -80,17 +80,13 @@ public class AudioManager : MonoBehaviour
         ManagerSource.Play();
     }
 
-    public void PlayFuse ()
-    {
-        Sound s = Array.Find(sounds, sound => sound.name == "Fuse");
-        s.source.Play();
-    }
-
     public void PlayResult(bool result)
     {
         if (result)
         {
             Sound s = Array.Find(sounds, sound => sound.name == "ResultSuccess");
+            s.source.Play();
+            s = Array.Find(sounds, sound => sound.name == "Fuse");
             s.source.Play();
         }
         else

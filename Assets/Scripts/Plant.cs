@@ -12,6 +12,8 @@ public class Plant : MonoBehaviour
   public UnityEvent OnClick = new UnityEvent();
   public UnityEvent OnResetAnimationEnd = new UnityEvent();
 
+  public GameInventory inventory;
+
   public MeshRenderer pot;
   public Material potDefaultMaterial;
   public Material potHighlightMaterial;
@@ -20,11 +22,16 @@ public class Plant : MonoBehaviour
   public MeshRenderer tree;
   public MeshRenderer ashes;
 
+  public Transform fruitsGrowth;
+
   void Start()
   {
     bud.gameObject.SetActive(true);
     tree.gameObject.SetActive(false);
     ashes.gameObject.SetActive(false);
+    fruitsGrowth.gameObject.SetActive(false);
+
+    inventory.onFruitObtained += GrowFruits;
   }
 
   public void Evolve(bool success)
@@ -36,11 +43,18 @@ public class Plant : MonoBehaviour
     if (success)
     {
       tree.gameObject.SetActive(true);
+      fruitsGrowth.gameObject.SetActive(true);
     }
     else
     {
       ashes.gameObject.SetActive(true);
     }
+  }
+
+  public void GrowFruits(Fruit fruit)
+  {
+    Transform position = fruitsGrowth.GetChild(Random.Range(0, fruitsGrowth.childCount));
+    Instantiate(fruit.mesh, position);
   }
 
   void OnMouseEnter()
@@ -92,6 +106,15 @@ public class Plant : MonoBehaviour
     tree.gameObject.SetActive(false);
     ashes.gameObject.SetActive(false);
     bud.gameObject.SetActive(true);
+    // Clear fruits
+    foreach (Transform pos in fruitsGrowth)
+    {
+      foreach (Transform child in pos)
+      {
+        Destroy(child.gameObject);
+      }
+    }
+    fruitsGrowth.gameObject.SetActive(false);
 
     // Move down
     gameObject.Tween("MoveDown", upPos, currentPos, MOVEMENT_DURATION, TweenScaleFunctions.SineEaseOut, (p) =>

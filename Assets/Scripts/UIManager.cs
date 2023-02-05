@@ -9,9 +9,11 @@ public class UIManager : MonoBehaviour
 {
   private Tool.ToolType? selectedTool = null;
   private Fruit selectedFruit = null;
-  private bool locked = false;
+  private bool locked = true;
   private bool success = false;
+  private bool started = false;
 
+  public UnityEvent onExitStartScreen = new UnityEvent();
   public UnityEvent<Tool.ToolType> onSelectTool = new UnityEvent<Tool.ToolType>();
   public UnityEvent<Fruit> onSelectFruit = new UnityEvent<Fruit>();
   public UnityEvent onClearSelection = new UnityEvent();
@@ -21,8 +23,11 @@ public class UIManager : MonoBehaviour
   public GameInventory inventory;
   public List<ToolButton> toolButtons;
 
+
   public TMP_Text notifications;
   public GameObject victoryScreen;
+  public GameObject startScreen;
+  public GameObject[] gameUI;
 
   public GameObject fruitButtonPrefab;
   public RectTransform fruitsPanel;
@@ -48,6 +53,27 @@ public class UIManager : MonoBehaviour
     notifications.CrossFadeAlpha(0f, 0.1f, true);
 
     notifications.text = "";
+
+    foreach (GameObject child in gameUI)
+    {
+      child.SetActive(false);
+    }
+  }
+
+  void Update()
+  {
+    if (!started && Input.GetMouseButtonDown(0))
+    {
+      startScreen.SetActive(false);
+      foreach (GameObject child in gameUI)
+      {
+        child.SetActive(true);
+      }
+
+      onExitStartScreen.Invoke();
+      started = true;
+      locked = false;
+    }
   }
 
   void SelectTool(Tool.ToolType tool)
@@ -138,6 +164,12 @@ public class UIManager : MonoBehaviour
 
   public void Unlock()
   {
+    locked = false;
+  }
+
+  public void BeginGame()
+  {
+    GetComponent<CanvasGroup>().alpha = 1f;
     locked = false;
   }
 }

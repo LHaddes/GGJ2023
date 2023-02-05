@@ -32,6 +32,7 @@ public class GameInventory : ScriptableObject
     onFruitObtained.Invoke(fruit);
     if (!fruit.isUnlocked)
     {
+      Debug.Log("Unlock");
       fruit.isUnlocked = true;
       var availableFruits = ListAvailableFruits();
       unlockAppleInEncyclopedia.Invoke();

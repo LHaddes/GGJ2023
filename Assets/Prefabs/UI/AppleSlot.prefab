@@ -304,8 +304,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   appleImage: {fileID: 5649597101962784264}
+  appleName: {fileID: 5649597103437916114}
   appleSprite: {fileID: 0}
-  appleName: 
+  appleNameString: 
 --- !u!114 &1017286685161553571
 MonoBehaviour:
   m_ObjectHideFlags: 0

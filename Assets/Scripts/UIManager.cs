@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
@@ -18,7 +19,7 @@ public class UIManager : MonoBehaviour
     public Button fuseButton;
     public List<ToolButton> toolButtons;
 
-    public Text notifications;
+    public TMP_Text notifications;
     public GameObject victoryScreen;
 
     public GameObject fruitButtonPrefab;
@@ -40,7 +41,9 @@ public class UIManager : MonoBehaviour
         fuseButton.interactable = false;
         fuseButton.onClick.AddListener(FuseSelected);
 
-        victoryScreen.SetActive(false);
+        if(victoryScreen.activeInHierarchy)
+            victoryScreen.SetActive(false);
+        
         notifications.text = "";
     }
 

@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ToolPropertiesDefinition
   tools:
   - tool: 0
-    mesh: {fileID: 4026673763926082877, guid: 5de72dd71d65245e1b5a2e2f4a4ba3d0, type: 3}
-    sprite: {fileID: 0}
+    mesh: {fileID: 658938913932427307, guid: f08715129332dee4cbf3fc82b5784493, type: 3}
+    sprite: {fileID: 21300000, guid: 4df25222e20628c469052c340614c61b, type: 3}
     sound: {fileID: 8300000, guid: 0ded996f40535744ea54cd34c6a01243, type: 3}
   - tool: 2
-    mesh: {fileID: 4026673763926082877, guid: 5de72dd71d65245e1b5a2e2f4a4ba3d0, type: 3}
-    sprite: {fileID: 0}
+    mesh: {fileID: 919132149155446097, guid: 4c39d3d6f7260b74fb55f6435e62f782, type: 3}
+    sprite: {fileID: 21300000, guid: 1ebbc151188ac5244b431617b2a160cb, type: 3}
     sound: {fileID: 8300000, guid: d03f06c12797fed4390c22ff83e732a8, type: 3}
   - tool: 1
-    mesh: {fileID: 4026673763926082877, guid: 5de72dd71d65245e1b5a2e2f4a4ba3d0, type: 3}
-    sprite: {fileID: 0}
+    mesh: {fileID: 804593218815095360, guid: 3a8faf0a23e16b44296b61e6bd11d56b, type: 3}
+    sprite: {fileID: 21300000, guid: 881f5cb5adb8e4e4ea9b9c126bd5bc41, type: 3}
     sound: {fileID: 8300000, guid: e5827e4e5bdab174d91bec01077ed99b, type: 3}
   - tool: 3
-    mesh: {fileID: 4026673763926082877, guid: 5de72dd71d65245e1b5a2e2f4a4ba3d0, type: 3}
-    sprite: {fileID: 0}
+    mesh: {fileID: 5690232464933666209, guid: a9786b6196aa5cc4a8b44e199cb94f37, type: 3}
+    sprite: {fileID: 21300000, guid: 2ff07d24f49e1fc4a86af977fa2e2a8c, type: 3}
     sound: {fileID: 8300000, guid: fa960c7a78d329a4f9da5336e7ba3ede, type: 3}

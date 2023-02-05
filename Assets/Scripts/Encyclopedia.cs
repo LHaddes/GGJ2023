@@ -33,6 +33,8 @@ public class Encyclopedia : MonoBehaviour
     public UnityEvent<bool> ClickInEncyclopedia = new UnityEvent<bool>();
     private GameplayManager _gameplayManager;
 
+    public ToolPropertiesDefinition toolDef;
+
 
     void Awake()
     {
@@ -142,29 +144,37 @@ public class Encyclopedia : MonoBehaviour
             appleInfoImage.sprite = apple.sprite;
             appleInfoDescription.text = apple.description;
             appleInfoRarity.text = apple.rarity.ToString();
+            
+            firstRecipePanel.SetActive(true);
+            secondRecipePanel.SetActive(true);
 
-            if (apple.recipeList.Count < 1)
+            if (apple.recipeList.Count == 0)
             {
                 firstRecipePanel.SetActive(false);
                 secondRecipePanel.SetActive(false);
             }
-
-            if (apple.recipeList.Count > 1)
-            {
-                appleRecipeSlot1.sprite = apple.recipeList[0].fruit.sprite;
-                appleRecipeSlot2.sprite = apple.recipeList[1].fruit.sprite;
-                //TODO Ajouter le sprite de l'outil
-            }
             else
             {
-                foreach (Recipe r in apple.recipeList)
+                if (apple.recipeList.Count > 1)
                 {
-                    appleRecipeSlot1.sprite = r.fruit.sprite;
-                    //TODO Ajouter le sprite de l'outil
+                    appleRecipeSlot1.sprite = apple.recipeList[0].fruit.sprite;
+                    appleToolSlot1.sprite = toolDef.tools.Find(propertie => apple.recipeList[0].tool == propertie.tool).sprite;
+                    appleRecipeSlot2.sprite = apple.recipeList[1].fruit.sprite;
+                    appleToolSlot2.sprite = toolDef.tools.Find(propertie => apple.recipeList[1].tool == propertie.tool).sprite;
                 }
+                else
+                {
+                    foreach (Recipe r in apple.recipeList)
+                    {
+                        appleRecipeSlot1.sprite = r.fruit.sprite;
+                        appleToolSlot1.sprite = toolDef.tools.Find(propertie => apple.recipeList[0].tool == propertie.tool).sprite;
+                    }
 
-                secondRecipePanel.SetActive(false);
+                    secondRecipePanel.SetActive(false);
+                }
             }
+
+            
         }
     }
 }

@@ -37,11 +37,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d084bb70e3714453d98b556da193c8f8, type: 2}
   - {fileID: 11400000, guid: 49c371516510e4032a83265e201c4c8f, type: 2}
   - {fileID: 11400000, guid: cbdfe0e8ce4ab4391bfda3026d8216db, type: 2}
-  - {fileID: 11400000, guid: 065f017f96fd74ac4b211377ac973b32, type: 2}
-  - {fileID: 11400000, guid: 1aa56d3fe03da4a31b2a66cd4d0aa6a8, type: 2}
-  - {fileID: 11400000, guid: 4373930d441354ce898cfc043dc7fcd0, type: 2}
   - {fileID: 11400000, guid: 8a4ebe8681bf4334199388c7a35712b0, type: 2}
-  - {fileID: 11400000, guid: 6ffcc8846253849f589fb28cefafda6b, type: 2}
   defaultFruit: {fileID: 11400000, guid: 8a4ebe8681bf4334199388c7a35712b0, type: 2}
   unlockAppleInEncyclopedia:
     m_PersistentCalls:

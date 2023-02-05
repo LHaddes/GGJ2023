@@ -16,3 +16,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5272c2189593a4f489d194c6b58bd636, type: 2}
   - {fileID: 11400000, guid: 8a4ebe8681bf4334199388c7a35712b0, type: 2}
   - {fileID: 11400000, guid: 05ddccf0f5dcc5241bdb2e2d036e2256, type: 2}
+  defaultFruit: {fileID: 11400000, guid: 8a4ebe8681bf4334199388c7a35712b0, type: 2}
+  unlockAppleInEncyclopedia:
+    m_PersistentCalls:
+      m_Calls: []

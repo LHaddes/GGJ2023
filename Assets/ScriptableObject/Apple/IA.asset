@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: IA
   m_EditorClassIdentifier: 
-  name: Pomme IA
+  appleName: Pomme IA
   description: "La Pomme IA renferme un gigantesque r\xE9seau de neurones informatiques.
     Elle n\u2019est malheureusement pas comestible, mais r\xE9pondra volontiers \xE0
     vos questions en tous genres si celles-ci sont pr\xE9c\xE9d\xE9es de la formulation
@@ -24,7 +24,6 @@ MonoBehaviour:
   mesh: {fileID: 0}
   sound: {fileID: 8300000, guid: f3fd9488bbcc3ff4c90ee9916eea7d61, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: b91081c763b4741a0ab5de83643346c2, type: 2}
     tool: 2

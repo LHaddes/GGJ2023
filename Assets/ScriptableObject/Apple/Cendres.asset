@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Cendres
   m_EditorClassIdentifier: 
-  name: Cendres
+  appleName: Cendres
   description: "Vous avez rat\xE9 votre exp\xE9rience. Vous r\xE9cup\xE9rez les quelques
     cendres obtenues, devrions-nous les jeter, ou \u2026?"
   rarity: 1
   sprite: {fileID: 21300000, guid: 13e99a15124fec34293b366824335621, type: 3}
   mesh: {fileID: 7083613677206568134, guid: e3f8784aedcf792438a13a6222ee6cc7, type: 3}
   sound: {fileID: 8300000, guid: b53a4d61c612abb44a69144c92fcddf2, type: 3}
-  isUnlocked: 1
-  isUnlockedOnStart: 0
+  isUnlocked: 0
   recipeList: []

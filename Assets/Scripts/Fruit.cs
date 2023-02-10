@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 [CreateAssetMenu(menuName = "Fruit/New Fruit")]
 public class Fruit : ScriptableObject
 {
-    public string name;
+    public string appleName;
     public string description;
     [Serializable]
     public enum Rarity
@@ -24,18 +24,17 @@ public class Fruit : ScriptableObject
     public GameObject mesh;
     public AudioClip sound;
     public bool isUnlocked;
-    public bool isUnlockedOnStart;
     public List<Recipe> recipeList = new List<Recipe>();
 
     public void OnEnable()
     {
-        if (name != "Pomme")
+        if (appleName != "Pomme")
             isUnlocked = false;
     }
 
     public void OnDisable()
     {
-        if (name != "Pomme")
+        if (appleName != "Pomme")
             isUnlocked = false;
     }
 }

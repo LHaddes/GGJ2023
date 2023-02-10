@@ -7,21 +7,21 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Button), typeof(Image))]
 public class FruitButton : MonoBehaviour
 {
-  public Fruit fruit;
-  public UnityAction<Fruit> onSelect;
+    public Fruit fruit;
+    public UnityAction<Fruit> onSelect;
 
-  public Text innerText;
+    public Text innerText;
 
-  void Start()
-  {
-    GetComponent<Button>().onClick.AddListener(SelectFruit);
-    GetComponent<Image>().sprite = fruit.sprite;
+    void Start()
+    {
+        GetComponent<Button>().onClick.AddListener(SelectFruit);
+        GetComponent<Image>().sprite = fruit.sprite;
 
-    innerText.text = fruit.name;
-  }
+        innerText.text = fruit.appleName;
+    }
 
-  void SelectFruit()
-  {
-    onSelect.Invoke(fruit);
-  }
+    void SelectFruit()
+    {
+        onSelect.Invoke(fruit);
+    }
 }

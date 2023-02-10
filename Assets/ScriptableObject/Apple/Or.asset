@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Or
   m_EditorClassIdentifier: 
-  name: Pomme d'Or
+  appleName: Pomme d'Or
   description: "La Pomme d\u2019Or est, en bref, en or. Elle est majoritairement
     utilis\xE9e comme \xE9l\xE9ment de d\xE9coration chez les plus bourgeois. Fun
     Fact: Il est av\xE9r\xE9 qu\u2019elle contient assez d\u2019or pour constituer
@@ -24,7 +24,6 @@ MonoBehaviour:
   mesh: {fileID: 5554678244620205109, guid: d38fcb8ef81625f45b8cd5bf2e08abf6, type: 3}
   sound: {fileID: 8300000, guid: e972718ab7f27af41878cb28ad000e44, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 11fc0e0e205064c86a86b5524de15a69, type: 2}
     tool: 3

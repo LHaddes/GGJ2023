@@ -83,8 +83,8 @@ public class Encyclopedia : MonoBehaviour
 
             if (_gameplayManager.inventory.allFruits[i].isUnlocked)
             {
-                slot.name = _gameplayManager.inventory.allFruits[i].name;
-                slot.appleNameString = _gameplayManager.inventory.allFruits[i].name;
+                slot.name = _gameplayManager.inventory.allFruits[i].appleName;
+                slot.appleNameString = _gameplayManager.inventory.allFruits[i].appleName;
                 slot.appleSprite = _gameplayManager.inventory.allFruits[i].sprite;
             }
             else
@@ -110,8 +110,8 @@ public class Encyclopedia : MonoBehaviour
             AppleSlot slot = allFruitSlots[i].GetComponent<AppleSlot>();
             if (_gameplayManager.inventory.allFruits[i].isUnlocked)
             {
-                slot.name = _gameplayManager.inventory.allFruits[i].name;
-                slot.appleNameString = _gameplayManager.inventory.allFruits[i].name;
+                slot.name = _gameplayManager.inventory.allFruits[i].appleName;
+                slot.appleNameString = _gameplayManager.inventory.allFruits[i].appleName;
                 slot.appleSprite = _gameplayManager.inventory.allFruits[i].sprite;
             }
             else
@@ -131,7 +131,7 @@ public class Encyclopedia : MonoBehaviour
         Fruit apple = null;
         for (int i = 0; i < _gameplayManager.inventory.allFruits.Count; i++)
         {
-            if (_gameplayManager.inventory.allFruits[i].name == info.appleNameString)
+            if (_gameplayManager.inventory.allFruits[i].appleName == info.appleNameString)
             {
                 apple = _gameplayManager.inventory.allFruits[i];
                 break;
@@ -140,7 +140,7 @@ public class Encyclopedia : MonoBehaviour
 
         if (apple != null)
         {
-            appleInfoName.text = apple.name;
+            appleInfoName.text = apple.appleName;
             appleInfoImage.sprite = apple.sprite;
             appleInfoDescription.text = apple.description;
             appleInfoRarity.text = apple.rarity.ToString();

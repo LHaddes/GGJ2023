@@ -27,7 +27,7 @@ public class BetaSelection : MonoBehaviour
 
   public void ShowSelectedFruit(Fruit fruit)
   {
-    selectedFruit.text = fruit.name;
+    selectedFruit.text = fruit.appleName;
   }
 
   public void Clear()

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Comete
   m_EditorClassIdentifier: 
-  name: "Pomme Com\xE8te"
+  appleName: "Pomme Com\xE8te"
   description: "La Pomme Com\xE8te est enrob\xE9e d\u2019\xE9nergie cosmique. S\u2019il
     faut l\u2019aide d\u2019un astronome descendant direct de Galil\xE9e pour la
     pr\xE9parer et la d\xE9guster, sa saveur exceptionnelle en fait l\u2019un des
@@ -23,7 +23,6 @@ MonoBehaviour:
   mesh: {fileID: 965598972498635425, guid: 1469a20170433a144946136ac37e2234, type: 3}
   sound: {fileID: 8300000, guid: 767ed59d6f298e14485eed90dd82d07f, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 05ddccf0f5dcc5241bdb2e2d036e2256, type: 2}
     tool: 1

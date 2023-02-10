@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Fer
   m_EditorClassIdentifier: 
-  name: Pomme de Fer
+  appleName: Pomme de Fer
   description: "La Pomme de Fer est ferme et robuste. Les seules personnes ayant
     voulu la go\xFBter tel quel en ont perdu leurs dents, et leurs repas ne se r\xE9sument
     d\xE9sormais qu\u2019\xE0 de la nourriture liquide. Les manifestants s\u2019en
@@ -22,7 +22,6 @@ MonoBehaviour:
   mesh: {fileID: 1933211523772517813, guid: eed5f89877048324b9b4a7452a23876b, type: 3}
   sound: {fileID: 8300000, guid: 969e2350e5df32a41bab3e00b661121d, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 5272c2189593a4f489d194c6b58bd636, type: 2}
     tool: 0

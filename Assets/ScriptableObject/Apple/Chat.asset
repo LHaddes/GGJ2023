@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Chat
   m_EditorClassIdentifier: 
-  name: Pomme Chat
+  appleName: Pomme Chat
   description: "La Pomme Chat arbore une \xE9tonnante moustache. Les gourmets du
     monde entier s\u2019accordent \xE0 dire que son go\xFBt est un complexe m\xE9lange
     de poulet, de brocoli et de riz cantonais. Ne lui donnez pas de lait apr\xE8s
@@ -21,8 +21,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 524de8e2852457c498f8815c3bf9daa2, type: 3}
   mesh: {fileID: 5584089291195171130, guid: 5c21655404108664db32e89654dfda81, type: 3}
   sound: {fileID: 8300000, guid: c070f3d02a96e9b41851e41266cb3c20, type: 3}
-  isUnlocked: 1
-  isUnlockedOnStart: 0
+  isUnlocked: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 5272c2189593a4f489d194c6b58bd636, type: 2}
     tool: 2

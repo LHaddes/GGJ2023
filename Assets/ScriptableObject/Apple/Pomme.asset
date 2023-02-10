@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Pomme
   m_EditorClassIdentifier: 
-  name: Pomme
+  appleName: Pomme
   description: "La Pomme a une structure g\xE9n\xE9tique instable qui se transforme
     au contact de certains outils. Son ADN poss\xE8de de nombreuses possibilit\xE9s
     d\u2019evolutions"
@@ -21,5 +21,4 @@ MonoBehaviour:
   mesh: {fileID: 4455313464291027932, guid: 72f838f36b5a72245a8fc6cbd574fcfb, type: 3}
   sound: {fileID: 8300000, guid: cb098637e7b892742a22cbca3d85fa37, type: 3}
   isUnlocked: 1
-  isUnlockedOnStart: 1
   recipeList: []

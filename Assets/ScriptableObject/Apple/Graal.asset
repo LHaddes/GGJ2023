@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Graal
   m_EditorClassIdentifier: 
-  name: Pomme Graal
+  appleName: Pomme Graal
   description: "La Pomme Graal a la forme du calice divin de la l\xE9gende arthurienne.
     Elle n\u2019est pas comestible, mais sublimera n\u2019importe quel ap\xE9ritif
     lors de vos diners mondains. Faire s\u2019entrechoquer deux Pomme Graal \xE9tait
@@ -23,7 +23,6 @@ MonoBehaviour:
   mesh: {fileID: 1535168807925422352, guid: c4841b900fe820549b84ee967acf1787, type: 3}
   sound: {fileID: 8300000, guid: 79de3a446aa854a44a743172bbadbbb4, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: a1820217e4be6405fb0a958f52dd618e, type: 2}
     tool: 0

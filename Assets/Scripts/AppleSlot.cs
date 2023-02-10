@@ -13,7 +13,6 @@ public class AppleSlot : MonoBehaviour
     [HideInInspector] public Sprite appleSprite;
     [HideInInspector] public string appleNameString;
     
-    // Start is called before the first frame update
     void Start()
     {
         UnlockSlot();
@@ -23,11 +22,5 @@ public class AppleSlot : MonoBehaviour
     {
         appleImage.sprite = appleSprite;
         appleName.text = appleNameString;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

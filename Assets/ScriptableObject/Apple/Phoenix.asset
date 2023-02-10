@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Phoenix
   m_EditorClassIdentifier: 
-  name: Pomme Phoenix
-  description: "La Pomme Phoenix ressemble \xE0 s\u2019y m\xE9prendre au l\xE9gendaire
+  appleName: "Pomme Ph\xE9nix"
+  description: "La Pomme Ph\xE9nix ressemble \xE0 s\u2019y m\xE9prendre au l\xE9gendaire
     oiseau de feu. Certains gourmets t\xE9m\xE9raires racontent que prendre une bouch\xE9e
     de ce fruit est proche de la sensation d\u2019avaler un cendrier de lendemain
     de soir\xE9e, avec un l\xE9ger arri\xE8re-go\xFBt de poulet brais\xE9. En agitant
@@ -26,7 +26,6 @@ MonoBehaviour:
   mesh: {fileID: 0}
   sound: {fileID: 8300000, guid: 7cac2501a1de01448981eb7eea42cfd0, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 8a4ebe8681bf4334199388c7a35712b0, type: 2}
     tool: 3

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Philosophale
   m_EditorClassIdentifier: 
-  name: Pomme Philosophale
+  appleName: Pomme Philosophale
   description: "La Pomme Philosophale est d\u2019apparence min\xE9rale rouge\xE2tre.
     La plupart des gourmets ont peur de la go\xFBter, mais son apparence brute d\xE9guise
     en fait une d\xE9licieuse gel\xE9e de framboise. Sa teneur riche en fer rappelle
@@ -26,7 +26,6 @@ MonoBehaviour:
   mesh: {fileID: 0}
   sound: {fileID: 8300000, guid: 6a66e8cd32fa9ec4f9414da45abf67b9, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: a7a67a3418e984f47bab510f47d49120, type: 2}
     tool: 0

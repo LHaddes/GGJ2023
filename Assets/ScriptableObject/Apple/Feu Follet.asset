@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Feu Follet
   m_EditorClassIdentifier: 
-  name: Pomme Feu Follet
+  appleName: Pomme Feu Follet
   description: "La Pomme Feu Follet est avant tout un amas de gaz combustible et
     d\u2019\xE9nergie spectrale. Elle n\u2019a globalement pas de go\xFBt, ni de
     texture. Capturez la dans un aspirateur S.O.S puis rel\xE2chez la chez votre
@@ -22,7 +22,6 @@ MonoBehaviour:
   mesh: {fileID: 379804237766895587, guid: 546e68aee026ab145bbcd3ce9e4311fb, type: 3}
   sound: {fileID: 8300000, guid: 93c4d4f149fcc734caff3efd61245f83, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 05ddccf0f5dcc5241bdb2e2d036e2256, type: 2}
     tool: 2

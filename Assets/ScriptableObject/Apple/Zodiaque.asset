@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Zodiaque
   m_EditorClassIdentifier: 
-  name: Pomme Chevalier du Zodiaque
+  appleName: Pomme Chevalier du Zodiaque
   description: "La Pomme Chevalier du Zodiaque est \xE9quip\xE9e d\u2019une des l\xE9gendaires
     12/13 armures d\u2019or. Seulement quelques chanceux ont pu savourer la vraie
     essence de ce fruit, car il faut malheureusement \xEAtre du signe du zodiaque
@@ -24,7 +24,6 @@ MonoBehaviour:
   mesh: {fileID: 2660295603466007646, guid: 795e9dd763854bd41a0b37d9dd19f5b9, type: 3}
   sound: {fileID: 8300000, guid: 965d4d7aceb9b31448ff32e20bcd79c4, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: b0a200c1ad2504256bc1a6705d717dce, type: 2}
     tool: 1

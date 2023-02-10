@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Fusee
   m_EditorClassIdentifier: 
-  name: "Pomme Fus\xE9e"
+  appleName: "Pomme Fus\xE9e"
   description: "La Pomme Fus\xE9e est constitu\xE9e avant tout de metal, d\u2019\xE9nergie
     cosmique et de carburant. Philippe Etchebest et Thierry Marx th\xE9orisent qu\u2019il
     faut la faire fondre dans un four en pyrolyse (500\xB0C) ou la faire mijoter
@@ -23,7 +23,6 @@ MonoBehaviour:
   mesh: {fileID: 6268439379256353313, guid: e5f07cf5680f76d43adcc0b9cd96f6aa, type: 3}
   sound: {fileID: 8300000, guid: 2d87597d5c5e1cd408f56e9b3959eeec, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 4aac3ce48216e44b988189220ed0616f, type: 2}
     tool: 0

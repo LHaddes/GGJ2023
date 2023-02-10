@@ -7,14 +7,14 @@ using UnityEngine.Serialization;
 [Serializable]
 public class ToolProperties
 {
-  public Tool.ToolType tool;
-  public GameObject mesh;
-  public Sprite sprite;
-  public AudioClip sound;
+    public Tool.ToolType tool;
+    public GameObject mesh;
+    public Sprite sprite;
+    public AudioClip sound;
 }
 
 [CreateAssetMenu(menuName = "Tool/Properties Definition")]
 public class ToolPropertiesDefinition : ScriptableObject
 {
-  public List<ToolProperties> tools;
+    public List<ToolProperties> tools;
 }

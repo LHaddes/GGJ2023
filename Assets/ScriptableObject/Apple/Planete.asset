@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Planete
   m_EditorClassIdentifier: 
-  name: "Pomme Plan\xE8te"
+  appleName: "Pomme Plan\xE8te"
   description: "La Pomme Plan\xE8te est un \xE9cosyst\xE8me \xE0 part enti\xE8re.
     Il est pr\xE9f\xE9rable de la consommer lorsque les bact\xE9ries et insectes
     alentours se r\xE9unissent \xE0 sa surface, pour apporter une saveur plus complexe
@@ -23,7 +23,6 @@ MonoBehaviour:
   mesh: {fileID: 3497593478023058437, guid: 962f2c546226a5b4e816774161dbb444, type: 3}
   sound: {fileID: 8300000, guid: 24df83719058db54d9d8ecc6f261fe9f, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 73adf13f8837a4bdfa3b336b995ad92a, type: 2}
     tool: 3

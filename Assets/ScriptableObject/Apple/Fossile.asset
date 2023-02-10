@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Fossile
   m_EditorClassIdentifier: 
-  name: Pomme Fossile
+  appleName: Pomme Fossile
   description: "La Pomme Fossile a l\u2019apparence d\u2019un fossile d\u2019ammonite
     \xE0 l\u2019int\xE9rieur creux. Son apparence min\xE9rale est trompeuse, puisque
     ce fruit se d\xE9guste en fait comme un savoureux sabl\xE9 aux amandes. Etrangement,
@@ -24,7 +24,6 @@ MonoBehaviour:
   mesh: {fileID: 0}
   sound: {fileID: 8300000, guid: 20add0c32a8e73441923d4ea32b093c2, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: ac3bd67458fe9468796f9d5aa5b6786d, type: 2}
     tool: 3

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Ouroboros
   m_EditorClassIdentifier: 
-  name: Pomme Ouroboros
+  appleName: Pomme Ouroboros
   description: "La Pomme Ouroboros n\u2019a pas de tige ni de trognon. La Pomme Ouroboros
     n\u2019a ni commencement ni fin. En prendre une bouch\xE9e reviendrait \xE0 ne
     ressentir plus que sa saveur jusqu\u2019a la fin de ses jours. Cependant son
@@ -24,7 +24,6 @@ MonoBehaviour:
   mesh: {fileID: 5898938644928852736, guid: 1b7647bca7370664da00ea98f8f21ba4, type: 3}
   sound: {fileID: 8300000, guid: c7b960bb9055c9e4ca8b4d1a53a5c087, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 7fc4b88f82eee4100953b32164c142c3, type: 2}
     tool: 2

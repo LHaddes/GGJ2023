@@ -7,17 +7,17 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 public class ToolButton : MonoBehaviour
 {
-  public Tool.ToolType tool;
+    public Tool.ToolType tool;
 
-  public UnityAction<Tool.ToolType> onSelect;
+    public UnityAction<Tool.ToolType> onSelect;
 
-  void Start()
-  {
-    GetComponent<Button>().onClick.AddListener(SelectTool);
-  }
+    void Start()
+    {
+        GetComponent<Button>().onClick.AddListener(SelectTool);
+    }
 
-  void SelectTool()
-  {
-    onSelect.Invoke(tool);
-  }
+    void SelectTool()
+    {
+        onSelect.Invoke(tool);
+    }
 }

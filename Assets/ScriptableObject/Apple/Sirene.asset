@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Sirene
   m_EditorClassIdentifier: 
-  name: "Pomme Sir\xE8ne"
+  appleName: "Pomme Sir\xE8ne"
   description: "La Pomme Sir\xE8ne arbore une t\xEAte en forme de pomme, et une queue
     \xE9caill\xE9e. Si la t\xEAte est juteuse, la queue est tendre \xE0 l\u2019int\xE9rieur
     et croustillante a l\u2019ext\xE9rieur, comme un pav\xE9 de saumon cuit \xE0
@@ -25,7 +25,6 @@ MonoBehaviour:
   mesh: {fileID: 5288997013739502704, guid: 98ba8bccdf5852344bfbb38d5bb9e908, type: 3}
   sound: {fileID: 8300000, guid: 8a65df6546d8bdd49a0f0cf01fd749cb, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: fb506c42147424ef6bdf6c9191f6750e, type: 2}
     tool: 3

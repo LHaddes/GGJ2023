@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Tool : MonoBehaviour
 {
-  public enum ToolType
-  {
-    Hammer,
-    Star,
-    Eye,
-    Element
-  }
+    public enum ToolType
+    {
+        Hammer,
+        Star,
+        Eye,
+        Element
+    }
 }

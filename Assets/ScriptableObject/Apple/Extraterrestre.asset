@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Extraterrestre
   m_EditorClassIdentifier: 
-  name: Pomme Extraterrestre
+  appleName: Pomme Extraterrestre
   description: "La Pomme Extraterrestre est extr\xEAmement sus. Son scaphandre laisse
     deviner une ind\xE9niable intelligence qui lui permet d\u2019\xE9laborer de redoutables
     strat\xE9gies pour tromper ses proches. Sa saveur et sa texture sont en tout
@@ -23,8 +23,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: de3dd94f6cfc4a54180dcaeb38fe4cef, type: 3}
   mesh: {fileID: 1493800285851769685, guid: 07bf970f37d7c9a498f12f899f529a9f, type: 3}
   sound: {fileID: 8300000, guid: 83ed0381c84172f4aa62ff0270b51433, type: 3}
-  isUnlocked: 1
-  isUnlockedOnStart: 0
+  isUnlocked: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 8034ae302901249268ba54df18c61f83, type: 2}
     tool: 1

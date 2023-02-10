@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Super Saiyan
   m_EditorClassIdentifier: 
-  name: Pomme Super Saiyan
+  appleName: Pomme Super Saiyan
   description: "La Pomme Super Saiyan est coiff\xE9e d\u2019une impressionnante chevelure
     en \xE9pis dor\xE9s. Si son gout se rapproche de la cacarotte, il est pr\xE9f\xE9rable
     de ne pas la consommer pour prot\xE9ger son foyer de toutes sortes d\u2019aliens
@@ -24,7 +24,6 @@ MonoBehaviour:
   mesh: {fileID: 4801166396407781224, guid: 9cb097a61df32f74a9b1d518ef3c8baa, type: 3}
   sound: {fileID: 8300000, guid: 59a8a3665d1b7774c8ca47757a0878ea, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 73adf13f8837a4bdfa3b336b995ad92a, type: 2}
     tool: 1

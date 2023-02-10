@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Chevalier
   m_EditorClassIdentifier: 
-  name: Pomme Chevalier
+  appleName: Pomme Chevalier
   description: "La Pomme Chevalier est enrob\xE9e d\u2019une solide armure qui la
     prot\xE8ge des pr\xE9dateurs. Une fois \xE9pluch\xE9e, elle offre une texture
     savoureuse, mais un go\xFBt proche de celui de la chaire humaine. Elle sera n\xE9anmoins
@@ -23,7 +23,6 @@ MonoBehaviour:
   mesh: {fileID: 7372233089622120078, guid: 2a7ac7abcb38afe4ba48ba99e0818bdc, type: 3}
   sound: {fileID: 8300000, guid: 692958fb715b1194ab931a1b4c0eb260, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: fb506c42147424ef6bdf6c9191f6750e, type: 2}
     tool: 0

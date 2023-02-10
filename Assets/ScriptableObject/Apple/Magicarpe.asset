@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Magicarpe
   m_EditorClassIdentifier: 
-  name: Pomme Magicarpe
+  appleName: Pomme Magicarpe
   description: La Pomme Magicarpe utilise Trempette. Mais il ne se passe rien.
   rarity: 2
   sprite: {fileID: 21300000, guid: f86cad7da760d544fb0fa8ad44d6590c, type: 3}
   mesh: {fileID: 1060163142656247874, guid: 9a6229bc645af87419c51a736be58502, type: 3}
   sound: {fileID: 8300000, guid: 2c8d14f8fff7acf41b2b001f16985429, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: fb506c42147424ef6bdf6c9191f6750e, type: 2}
     tool: 2

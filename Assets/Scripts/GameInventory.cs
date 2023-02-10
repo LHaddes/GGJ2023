@@ -2,66 +2,62 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(menuName = "Fruit/New Inventory")]
 public class GameInventory : ScriptableObject
 {
-  public List<Fruit> allFruits = new List<Fruit>();
-  public Fruit defaultFruit;
+    public List<Fruit> allFruits = new List<Fruit>();
+    public Fruit failureFruit;
 
-  public UnityAction<Fruit> onFruitObtained;
-  public UnityAction<List<Fruit>> onFruitsAvailableUpdated;
-  public UnityAction onAllFruitsFound;
+    public UnityAction<Fruit> onFruitObtained;
+    public UnityAction<List<Fruit>> onFruitsAvailableUpdated;
+    public UnityAction onAllFruitsFound;
 
-  [HideInInspector] public UnityEvent unlockAppleInEncyclopedia = new UnityEvent();
+    [HideInInspector] public UnityEvent unlockAppleInEncyclopedia = new UnityEvent();
 
 
-  public void StartGame()
-  {
-    foreach (Fruit fruit in allFruits)
+    public void StartGame()
     {
-      fruit.isUnlocked = fruit.isUnlockedOnStart;
+        UIManager.Instance.AddFruitButton(allFruits[0]);
     }
 
-    onFruitsAvailableUpdated.Invoke(ListAvailableFruits());
-  }
-
-  public void ObtainFruit(Fruit fruit)
-  {
-
-    onFruitObtained.Invoke(fruit);
-    if (!fruit.isUnlocked)
+    public void ObtainFruit(Fruit fruit)
     {
-      Debug.Log("Unlock");
-      fruit.isUnlocked = true;
-      var availableFruits = ListAvailableFruits();
-      unlockAppleInEncyclopedia.Invoke();
-      onFruitsAvailableUpdated.Invoke(availableFruits);
-
-      if (availableFruits.Count == allFruits.Count)
-      {
-        onAllFruitsFound.Invoke();
-      }
-    }
-  }
-
-  public List<Fruit> ListAvailableFruits()
-  {
-    return allFruits.FindAll(fruit => fruit.isUnlocked);
-  }
-
-  public Fruit GetFusion(Tool.ToolType tool, Fruit fruit)
-  {
-    foreach (Fruit resultFruit in allFruits)
-    {
-      foreach (Recipe recipe in resultFruit.recipeList)
-      {
-        if (recipe.fruit == fruit && recipe.tool == tool)
+        onFruitObtained.Invoke(fruit);
+        if (!fruit.isUnlocked)
         {
-          return resultFruit;
+            Debug.Log("Unlock");
+            fruit.isUnlocked = true;
+            var availableFruits = ListAvailableFruits();
+            unlockAppleInEncyclopedia.Invoke();
+            UIManager.Instance.AddFruitButton(fruit);
+
+            if (availableFruits.Count == allFruits.Count)
+            {
+                onAllFruitsFound.Invoke();
+            }
         }
-      }
     }
-    return defaultFruit;
-  }
+
+    public List<Fruit> ListAvailableFruits()
+    {
+        return allFruits.FindAll(fruit => fruit.isUnlocked);
+    }
+
+    public Fruit GetFusion(Tool.ToolType tool, Fruit fruit)
+    {
+        foreach (Fruit resultFruit in allFruits)
+        {
+            foreach (Recipe recipe in resultFruit.recipeList)
+            {
+                if (recipe.fruit == fruit && recipe.tool == tool)
+                {
+                    return resultFruit;
+                }
+            }
+        }
+
+        return failureFruit;
+    }
 }

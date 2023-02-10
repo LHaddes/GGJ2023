@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176670e9cb9bacb4c885ba3b4f17111f, type: 3}
   m_Name: Ecailles
   m_EditorClassIdentifier: 
-  name: Pomme Ecailles
+  appleName: Pomme Ecailles
   description: "La Pomme Ecailles d\xE9gage une puissante aura magique, on devine
     que ses \xE9cailles renferment un potentiel gustatif unique. Il arrive de l\u2019entendre
     faiblement rugir de l\u2019int\xE9rieur, comme un oeuf pr\xEAt a \xE9clore."
@@ -21,7 +21,6 @@ MonoBehaviour:
   mesh: {fileID: 6719401739791851472, guid: 6f6c90fc1485d884aa73b494c717ecdf, type: 3}
   sound: {fileID: 8300000, guid: 00723fa7fb056e644b38aa6b9efba2e6, type: 3}
   isUnlocked: 0
-  isUnlockedOnStart: 0
   recipeList:
   - fruit: {fileID: 11400000, guid: 5272c2189593a4f489d194c6b58bd636, type: 2}
     tool: 1
